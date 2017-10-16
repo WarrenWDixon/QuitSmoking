@@ -45,15 +45,27 @@
                                             <barButtonItem style="plain" systemItem="flexibleSpace" id="Io9-h6-poE">
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             </barButtonItem>
-                                            <barButtonItem systemItem="rewind" id="eDX-tt-SsT"/>
+                                            <barButtonItem systemItem="rewind" id="eDX-tt-SsT">
+                                                <connections>
+                                                    <action selector="rewindPressed:" destination="BYZ-38-t0r" id="ZUe-UL-smH"/>
+                                                </connections>
+                                            </barButtonItem>
                                             <barButtonItem style="plain" systemItem="flexibleSpace" id="OYY-nW-xYB">
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             </barButtonItem>
-                                            <barButtonItem systemItem="play" id="nkr-6f-tz1"/>
+                                            <barButtonItem systemItem="play" id="nkr-6f-tz1">
+                                                <connections>
+                                                    <action selector="playPressed:" destination="BYZ-38-t0r" id="xq2-hl-hDH"/>
+                                                </connections>
+                                            </barButtonItem>
                                             <barButtonItem style="plain" systemItem="flexibleSpace" id="u6g-JD-FXN">
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             </barButtonItem>
-                                            <barButtonItem systemItem="pause" id="d5o-bO-A8J"/>
+                                            <barButtonItem systemItem="pause" id="d5o-bO-A8J">
+                                                <connections>
+                                                    <action selector="pausePressed:" destination="BYZ-38-t0r" id="Wph-kR-eAa"/>
+                                                </connections>
+                                            </barButtonItem>
                                             <barButtonItem style="plain" systemItem="flexibleSpace" id="lb0-oE-mSq">
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             </barButtonItem>
@@ -66,6 +78,9 @@
                                         <constraints>
                                             <constraint firstAttribute="width" constant="381" id="VP4-gw-1Ey"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="volumeChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="QYr-oU-q91"/>
+                                        </connections>
                                     </slider>
                                 </subviews>
                                 <constraints>
@@ -96,6 +111,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="QVG-3B-eUx"/>
+                    <connections>
+                        <outlet property="pauseButton" destination="d5o-bO-A8J" id="gfD-qx-dyV"/>
+                        <outlet property="playButton" destination="nkr-6f-tz1" id="1VQ-Wf-rra"/>
+                        <outlet property="volumeSlider" destination="dlI-w0-lmD" id="Gm6-0Q-6uK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -160,7 +180,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G5b-vH-fgg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1196" y="195.6521739130435"/>
+            <point key="canvasLocation" x="1228" y="143"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FCc-S0-MOO">

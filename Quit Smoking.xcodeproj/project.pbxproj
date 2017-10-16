@@ -14,6 +14,8 @@
 		E2DCC0371F931A1200952CA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2DCC0351F931A1200952CA4 /* LaunchScreen.storyboard */; };
 		E2DCC0411F931AA500952CA4 /* rayLines3.png in Resources */ = {isa = PBXBuildFile; fileRef = E2DCC0401F931AA100952CA4 /* rayLines3.png */; };
 		E2DCC0431F931F6800952CA4 /* rayLines5.png in Resources */ = {isa = PBXBuildFile; fileRef = E2DCC0421F931F6200952CA4 /* rayLines5.png */; };
+		E2DCC0DD1F944CE600952CA4 /* Stop_Smoking_Now.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E2DCC0DC1F944CE000952CA4 /* Stop_Smoking_Now.mp3 */; };
+		E2DCC0DF1F944CFA00952CA4 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DCC0DE1F944CFA00952CA4 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		E2DCC0381F931A1200952CA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2DCC0401F931AA100952CA4 /* rayLines3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rayLines3.png; sourceTree = "<group>"; };
 		E2DCC0421F931F6200952CA4 /* rayLines5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rayLines5.png; sourceTree = "<group>"; };
+		E2DCC0DC1F944CE000952CA4 /* Stop_Smoking_Now.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Stop_Smoking_Now.mp3; sourceTree = "<group>"; };
+		E2DCC0DE1F944CFA00952CA4 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				E2DCC02C1F931A1200952CA4 /* AppDelegate.swift */,
 				E2DCC02E1F931A1200952CA4 /* ViewController.swift */,
 				E2DCC0401F931AA100952CA4 /* rayLines3.png */,
+				E2DCC0DC1F944CE000952CA4 /* Stop_Smoking_Now.mp3 */,
+				E2DCC0DE1F944CFA00952CA4 /* Player.swift */,
 				E2DCC0421F931F6200952CA4 /* rayLines5.png */,
 				E2DCC0301F931A1200952CA4 /* Main.storyboard */,
 				E2DCC0331F931A1200952CA4 /* Assets.xcassets */,
@@ -133,6 +139,7 @@
 				E2DCC0341F931A1200952CA4 /* Assets.xcassets in Resources */,
 				E2DCC0411F931AA500952CA4 /* rayLines3.png in Resources */,
 				E2DCC0321F931A1200952CA4 /* Main.storyboard in Resources */,
+				E2DCC0DD1F944CE600952CA4 /* Stop_Smoking_Now.mp3 in Resources */,
 				E2DCC0431F931F6800952CA4 /* rayLines5.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2DCC02F1F931A1200952CA4 /* ViewController.swift in Sources */,
+				E2DCC0DF1F944CFA00952CA4 /* Player.swift in Sources */,
 				E2DCC02D1F931A1200952CA4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
