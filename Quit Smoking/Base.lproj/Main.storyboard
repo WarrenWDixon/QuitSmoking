@@ -4,7 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -12,6 +12,9 @@
         <array key="AppleSDGothicNeo.ttc">
             <string>AppleSDGothicNeo-Regular</string>
             <string>AppleSDGothicNeo-SemiBold</string>
+        </array>
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
         </array>
     </customFonts>
     <scenes>
@@ -24,19 +27,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rayLines5.png" translatesAutoresizingMaskIntoConstraints="NO" id="7xH-c7-X1J">
-                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <rect key="frame" x="0.0" y="64" width="750" height="672"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="Zn5-Jj-Ai1">
-                                <rect key="frame" x="18" y="269.33333333333331" width="378" height="198"/>
+                                <rect key="frame" x="18" y="269" width="381" height="198"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUIT SMOKING NOW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAD-bx-OQ6">
-                                        <rect key="frame" x="33" y="0.0" width="312" height="44"/>
+                                        <rect key="frame" x="34.333333333333343" y="0.0" width="312.33333333333326" height="44"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="34"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3c2-cq-Lpx">
-                                        <rect key="frame" x="0.33333333333334281" y="77" width="377.33333333333337" height="44"/>
+                                        <rect key="frame" x="0.33333333333334281" y="77" width="380.33333333333326" height="44"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="7yI-34-685"/>
@@ -74,7 +77,7 @@
                                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     </toolbar>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" minimumValueImage="audio-low-white" maximumValueImage="audio-mid-white" translatesAutoresizingMaskIntoConstraints="NO" id="dlI-w0-lmD">
-                                        <rect key="frame" x="-2" y="154" width="382" height="45"/>
+                                        <rect key="frame" x="-2" y="154" width="385" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="381" id="VP4-gw-1Ey"/>
                                         </constraints>
@@ -89,7 +92,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aon-V0-RaU">
-                                <rect key="frame" x="377" y="113" width="21" height="22"/>
+                                <rect key="frame" x="713" y="113" width="21" height="22"/>
                                 <state key="normal" image="cog-16"/>
                                 <connections>
                                     <segue destination="DAg-lx-8vM" kind="show" id="ZuD-7v-2fJ"/>
@@ -135,15 +138,18 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2je-q4-Lvo">
                                 <rect key="frame" x="60" y="262" width="294" height="212"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rrP-eg-jYD">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="rrP-eg-jYD">
                                         <rect key="frame" x="79" y="0.0" width="136" height="53"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="34"/>
                                         <state key="normal" title="READ ME">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="1h0-c8-2Kh" kind="show" id="1Nf-PL-wGL"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2OA-ae-Tt9">
-                                        <rect key="frame" x="73.666666666666671" y="53" width="147" height="53"/>
+                                        <rect key="frame" x="73.666666666666657" y="53" width="147" height="53"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="34"/>
                                         <state key="normal" title="REWARDS">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -162,6 +168,9 @@
                                         <state key="normal" title="RECORD QUIT DATE">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="gRI-3p-M0s" kind="show" id="5H4-jq-zW5"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -181,6 +190,124 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G5b-vH-fgg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1228" y="143"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7sm-Yv-dZj">
+            <objects>
+                <viewController id="1h0-c8-2Kh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zw7-Fd-qF5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="24" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32Z-M2-ESH">
+                                <rect key="frame" x="19" y="67.999999999999972" width="280" height="453.66666666666663"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="450" id="aYR-0I-sZe"/>
+                                    <constraint firstAttribute="width" constant="280" id="qnx-zq-Dbc"/>
+                                </constraints>
+                                <string key="text">When listening to Hypnotic Solutions make sure you are free of outside distractions and you will not be disturbed.  This should be considered a passive experience.  So you do not have to concentrate, verbalize, or memorize the words.  Simply let your body feels what it wants to feel and let your mind drift off to wherever it wants to go. 
+
+
+ Be sure not to listen to the CD’s and Mp3’s while in a moving vehicle, or at a time when your concentration is necessary for your safety and well being.  So when you get ready to listen take a long deep breath close your eyes, sit back, relax, and enjoy the experience.
+</string>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0pD-Yc-JUL" firstAttribute="trailing" secondItem="32Z-M2-ESH" secondAttribute="trailing" constant="21" id="2BP-nQ-Sb5"/>
+                            <constraint firstItem="32Z-M2-ESH" firstAttribute="top" secondItem="0pD-Yc-JUL" secondAttribute="top" constant="4" id="YbK-Ow-FJY"/>
+                            <constraint firstItem="32Z-M2-ESH" firstAttribute="leading" secondItem="0pD-Yc-JUL" secondAttribute="leading" constant="19" id="mok-Wd-huS"/>
+                            <constraint firstItem="0pD-Yc-JUL" firstAttribute="bottom" secondItem="32Z-M2-ESH" secondAttribute="bottom" constant="33" id="yVF-dj-WD2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0pD-Yc-JUL"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oQg-Iq-N97" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1965" y="145.77464788732394"/>
+        </scene>
+        <!--Selector View Controller-->
+        <scene sceneID="a6b-Sv-Yac">
+            <objects>
+                <viewController id="gRI-3p-M0s" customClass="SelectorViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="goC-hh-8ro">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="wwA-cf-WdY">
+                                <rect key="frame" x="32" y="113" width="359" height="163"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="163" id="GM5-1I-Vru"/>
+                                    <constraint firstAttribute="height" constant="163" id="aqb-F2-gTh"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="530586504.00469398">
+                                    <!--2017-10-25 01:08:24 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="dateSelected:" destination="gRI-3p-M0s" eventType="valueChanged" id="MMq-p2-xjI"/>
+                                </connections>
+                            </datePicker>
+                            <pickerView contentMode="scaleToFill" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="IUv-pT-rSS">
+                                <rect key="frame" x="27" y="410" width="356" height="163"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OuJ-ei-svO">
+                                <rect key="frame" x="61" y="286" width="292" height="53"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.4823529411764706" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
+                                <state key="normal" title="SET QUIT DATE">
+                                    <color key="titleColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <action selector="dateTapped:" destination="gRI-3p-M0s" eventType="touchUpInside" id="BIv-Qh-PXi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="748" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8M-w5-i6f">
+                                <rect key="frame" x="51" y="580" width="318" height="39"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.4823529411764706" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="28"/>
+                                <state key="normal" title="SET NUMBER PACKS">
+                                    <color key="titleColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <action selector="packsTapped:" destination="gRI-3p-M0s" eventType="touchUpInside" id="0l5-Rv-WgH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="A3m-cg-Zr3" firstAttribute="trailing" secondItem="IUv-pT-rSS" secondAttribute="trailing" constant="31" id="3Bs-or-mWh"/>
+                            <constraint firstItem="wwA-cf-WdY" firstAttribute="leading" secondItem="A3m-cg-Zr3" secondAttribute="leading" constant="32" id="5It-Hv-Yc7"/>
+                            <constraint firstItem="t8M-w5-i6f" firstAttribute="leading" secondItem="A3m-cg-Zr3" secondAttribute="leading" constant="51" id="6dl-n7-h2H"/>
+                            <constraint firstItem="A3m-cg-Zr3" firstAttribute="trailing" secondItem="wwA-cf-WdY" secondAttribute="trailing" constant="23" id="Dr1-3W-a8f"/>
+                            <constraint firstItem="A3m-cg-Zr3" firstAttribute="trailing" secondItem="OuJ-ei-svO" secondAttribute="trailing" constant="61" id="F64-up-RQQ"/>
+                            <constraint firstItem="IUv-pT-rSS" firstAttribute="top" secondItem="OuJ-ei-svO" secondAttribute="bottom" constant="71" id="FbA-M8-K1X"/>
+                            <constraint firstItem="OuJ-ei-svO" firstAttribute="top" secondItem="wwA-cf-WdY" secondAttribute="bottom" constant="10" id="GaN-iT-gsd"/>
+                            <constraint firstItem="wwA-cf-WdY" firstAttribute="top" secondItem="A3m-cg-Zr3" secondAttribute="top" constant="49" id="Gux-0H-Ny8"/>
+                            <constraint firstItem="OuJ-ei-svO" firstAttribute="leading" secondItem="A3m-cg-Zr3" secondAttribute="leading" constant="61" id="Jgu-XD-a2O"/>
+                            <constraint firstItem="t8M-w5-i6f" firstAttribute="top" secondItem="IUv-pT-rSS" secondAttribute="bottom" constant="7" id="Ll7-Zl-8Z8"/>
+                            <constraint firstItem="OuJ-ei-svO" firstAttribute="top" secondItem="wwA-cf-WdY" secondAttribute="bottom" constant="10" id="PcX-UV-sBW"/>
+                            <constraint firstItem="A3m-cg-Zr3" firstAttribute="trailing" secondItem="t8M-w5-i6f" secondAttribute="trailing" constant="45" id="Um5-Su-Qf5"/>
+                            <constraint firstItem="A3m-cg-Zr3" firstAttribute="bottom" secondItem="t8M-w5-i6f" secondAttribute="bottom" constant="117" id="d8x-Mr-BRQ"/>
+                            <constraint firstItem="IUv-pT-rSS" firstAttribute="height" secondItem="wwA-cf-WdY" secondAttribute="height" id="hZe-tb-Qux"/>
+                            <constraint firstItem="IUv-pT-rSS" firstAttribute="leading" secondItem="A3m-cg-Zr3" secondAttribute="leading" constant="27" id="nAT-Lq-SKP"/>
+                            <constraint firstItem="t8M-w5-i6f" firstAttribute="top" secondItem="IUv-pT-rSS" secondAttribute="bottom" constant="7" id="pO8-MO-kqY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="A3m-cg-Zr3"/>
+                    </view>
+                    <connections>
+                        <outlet property="packSelector" destination="IUv-pT-rSS" id="IXd-0a-58n"/>
+                        <outlet property="packsButton" destination="t8M-w5-i6f" id="JCi-5Y-1me"/>
+                        <outlet property="quitButton" destination="OuJ-ei-svO" id="3iL-OR-uk9"/>
+                        <outlet property="quitDateSelector" destination="wwA-cf-WdY" id="xfA-wf-JsU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hyv-NP-1Rc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1965.217391304348" y="848.64130434782612"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FCc-S0-MOO">

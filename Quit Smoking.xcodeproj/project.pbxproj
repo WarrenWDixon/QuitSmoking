@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2BFEE921FA010CC00313F81 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BFEE911FA010CC00313F81 /* GradientView.swift */; };
+		E2BFEE961FA0208400313F81 /* SelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BFEE951FA0208400313F81 /* SelectorViewController.swift */; };
 		E2DCC02D1F931A1200952CA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DCC02C1F931A1200952CA4 /* AppDelegate.swift */; };
 		E2DCC02F1F931A1200952CA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DCC02E1F931A1200952CA4 /* ViewController.swift */; };
 		E2DCC0321F931A1200952CA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2DCC0301F931A1200952CA4 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E2BFEE911FA010CC00313F81 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		E2BFEE951FA0208400313F81 /* SelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorViewController.swift; sourceTree = "<group>"; };
 		E2DCC0291F931A1200952CA4 /* Quit Smoking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quit Smoking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2DCC02C1F931A1200952CA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2DCC02E1F931A1200952CA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,12 +67,14 @@
 			isa = PBXGroup;
 			children = (
 				E2DCC02C1F931A1200952CA4 /* AppDelegate.swift */,
+				E2BFEE951FA0208400313F81 /* SelectorViewController.swift */,
 				E2DCC02E1F931A1200952CA4 /* ViewController.swift */,
 				E2DCC0401F931AA100952CA4 /* rayLines3.png */,
 				E2DCC0DC1F944CE000952CA4 /* Stop_Smoking_Now.mp3 */,
 				E2DCC0DE1F944CFA00952CA4 /* Player.swift */,
 				E2DCC0421F931F6200952CA4 /* rayLines5.png */,
 				E2DCC0301F931A1200952CA4 /* Main.storyboard */,
+				E2BFEE911FA010CC00313F81 /* GradientView.swift */,
 				E2DCC0331F931A1200952CA4 /* Assets.xcassets */,
 				E2DCC0351F931A1200952CA4 /* LaunchScreen.storyboard */,
 				E2DCC0381F931A1200952CA4 /* Info.plist */,
@@ -153,7 +159,9 @@
 			files = (
 				E2DCC02F1F931A1200952CA4 /* ViewController.swift in Sources */,
 				E2DCC0DF1F944CFA00952CA4 /* Player.swift in Sources */,
+				E2BFEE921FA010CC00313F81 /* GradientView.swift in Sources */,
 				E2DCC02D1F931A1200952CA4 /* AppDelegate.swift in Sources */,
+				E2BFEE961FA0208400313F81 /* SelectorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
