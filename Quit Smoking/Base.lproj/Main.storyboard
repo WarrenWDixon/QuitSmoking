@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,6 +16,8 @@
         </array>
         <array key="HelveticaNeue.ttc">
             <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Medium</string>
+            <string>HelveticaNeue-MediumItalic</string>
         </array>
     </customFonts>
     <scenes>
@@ -124,6 +127,232 @@
             </objects>
             <point key="canvasLocation" x="475.36231884057975" y="132.88043478260872"/>
         </scene>
+        <!--Sue Ward View Controller-->
+        <scene sceneID="AVw-dL-FD6">
+            <objects>
+                <viewController id="uM4-pn-EFA" customClass="SueWardViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zAD-jz-VbI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wxj-8M-GoR">
+                                <rect key="frame" x="0.0" y="62" width="414" height="319"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SiN-zT-rc1" firstAttribute="trailing" secondItem="wxj-8M-GoR" secondAttribute="trailing" id="35K-1x-vcw"/>
+                            <constraint firstItem="wxj-8M-GoR" firstAttribute="leading" secondItem="SiN-zT-rc1" secondAttribute="leading" id="SEZ-L6-OUT"/>
+                            <constraint firstItem="wxj-8M-GoR" firstAttribute="top" secondItem="zAD-jz-VbI" secondAttribute="top" constant="62" id="rEB-LE-hz0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SiN-zT-rc1"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="wxj-8M-GoR" id="OBl-FR-OOI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8v2-02-MRP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-236.23188405797103" y="842.93478260869574"/>
+        </scene>
+        <!--Mike Linlety View Controller-->
+        <scene sceneID="atK-2v-JRl">
+            <objects>
+                <viewController id="HK8-JJ-crm" customClass="MikeLinletyViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ek4-Vx-UCA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Rq-HN-9uU">
+                                <rect key="frame" x="0.0" y="64" width="414" height="319.33333333333331"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6Rq-HN-9uU" secondAttribute="height" multiplier="411:317" id="YFB-Fr-NqQ"/>
+                                </constraints>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6Rq-HN-9uU" firstAttribute="leading" secondItem="eCn-r4-spx" secondAttribute="leading" id="01R-kd-a1x"/>
+                            <constraint firstItem="eCn-r4-spx" firstAttribute="trailing" secondItem="6Rq-HN-9uU" secondAttribute="trailing" id="FUv-f7-L58"/>
+                            <constraint firstItem="6Rq-HN-9uU" firstAttribute="top" secondItem="eCn-r4-spx" secondAttribute="top" id="XGu-GM-dd3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eCn-r4-spx"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="6Rq-HN-9uU" id="Zvu-dc-5EI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b1d-BZ-MxC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-278.26086956521743" y="1488.5869565217392"/>
+        </scene>
+        <!--Dalia Daniel View Controller-->
+        <scene sceneID="rY4-71-7an">
+            <objects>
+                <viewController id="VfX-rB-8yi" customClass="DaliaDanielViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gaR-Tx-QVw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j53-B0-4CC">
+                                <rect key="frame" x="-1" y="66" width="411" height="332"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="j53-B0-4CC" secondAttribute="height" multiplier="411:332" id="Int-xl-7cR"/>
+                                </constraints>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="vpZ-M5-NUv"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="j53-B0-4CC" id="6DL-ep-Raz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jOd-1S-J0S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="479.71014492753625" y="1550.5434782608697"/>
+        </scene>
+        <!--Bella View Controller-->
+        <scene sceneID="bfZ-rP-lkr">
+            <objects>
+                <viewController id="Jxj-Qx-b1J" customClass="BellaViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cbH-9k-jF6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="38Y-jo-rM9">
+                                <rect key="frame" x="0.0" y="64" width="414" height="298"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="38Y-jo-rM9" secondAttribute="height" multiplier="207:149" id="DrQ-zn-oG4"/>
+                                </constraints>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="d1O-6V-4kM" firstAttribute="trailing" secondItem="38Y-jo-rM9" secondAttribute="trailing" id="JuC-kx-gXi"/>
+                            <constraint firstItem="38Y-jo-rM9" firstAttribute="top" secondItem="d1O-6V-4kM" secondAttribute="top" id="O5x-jm-EPV"/>
+                            <constraint firstItem="38Y-jo-rM9" firstAttribute="leading" secondItem="d1O-6V-4kM" secondAttribute="leading" id="b84-mf-h4t"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="d1O-6V-4kM"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="38Y-jo-rM9" id="Yjb-ej-HbW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NOQ-me-Zd8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1230.4347826086957" y="1558.6956521739132"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ggS-c8-jRm">
+            <objects>
+                <viewController id="Fkf-Sb-hwB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="844-DH-LaP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Robert Hudak Testimonials" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9K-cr-MLy">
+                                <rect key="frame" x="68" y="90" width="280" height="86.666666666666686"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="2MS-DF-Lbr">
+                                <rect key="frame" x="127" y="221" width="160" height="312"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFY-oF-qOS">
+                                        <rect key="frame" x="7" y="0.0" width="146" height="47"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="29"/>
+                                        <state key="normal" title="Paul Baker">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="wHe-UG-oYG" kind="show" id="Izq-Wv-8k5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rR-be-PAF">
+                                        <rect key="frame" x="15" y="66" width="130" height="47"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="29"/>
+                                        <state key="normal" title="Sue Ward">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="uM4-pn-EFA" kind="show" id="20D-bI-XqX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTW-Rp-mdU">
+                                        <rect key="frame" x="4.6666666666666572" y="132" width="151" height="47"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="29"/>
+                                        <state key="normal" title="Mike Linley">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="HK8-JJ-crm" kind="show" id="e9w-ak-OA6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VLY-fv-hRR">
+                                        <rect key="frame" x="0.0" y="198" width="160" height="47"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="29"/>
+                                        <state key="normal" title="Dalia Daniel">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="VfX-rB-8yi" kind="show" id="hnS-PS-JAf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMj-hX-fYJ">
+                                        <rect key="frame" x="45.666666666666657" y="264" width="69" height="48"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="30"/>
+                                        <state key="normal" title="Bella">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Jxj-Qx-b1J" kind="show" id="kmH-T6-Nnv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
+                        <constraints>
+                            <constraint firstItem="ogg-Gi-y7k" firstAttribute="trailing" secondItem="F9K-cr-MLy" secondAttribute="trailing" constant="66" id="6m5-TE-dPU"/>
+                            <constraint firstItem="2MS-DF-Lbr" firstAttribute="top" secondItem="F9K-cr-MLy" secondAttribute="bottom" constant="44.333333333333314" id="F6e-jk-vSF"/>
+                            <constraint firstItem="F9K-cr-MLy" firstAttribute="top" secondItem="ogg-Gi-y7k" secondAttribute="top" constant="26" id="TGK-ht-yTv"/>
+                            <constraint firstItem="2MS-DF-Lbr" firstAttribute="centerX" secondItem="844-DH-LaP" secondAttribute="centerX" id="Zcg-dr-xXH"/>
+                            <constraint firstItem="F9K-cr-MLy" firstAttribute="leading" secondItem="ogg-Gi-y7k" secondAttribute="leading" constant="68" id="hkS-DJ-wiQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ogg-Gi-y7k"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8IN-J5-xoy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="491.304347826087" y="822.554347826087"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="ssj-IU-rNn">
             <objects>
@@ -161,6 +390,9 @@
                                         <state key="normal" title="TESTIMONIALS">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="Fkf-Sb-hwB" kind="show" id="AZB-sg-KEC"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L38-E1-JPZ">
                                         <rect key="frame" x="0.0" y="159" width="294" height="53"/>
@@ -228,6 +460,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oQg-Iq-N97" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1965" y="145.77464788732394"/>
+        </scene>
+        <!--Paul Baker View Controller-->
+        <scene sceneID="6NR-xr-1nH">
+            <objects>
+                <viewController id="wHe-UG-oYG" customClass="PaulBakerViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w98-gX-sdG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CkQ-Qi-4U8">
+                                <rect key="frame" x="0.0" y="63" width="414" height="295"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="CkQ-Qi-4U8" secondAttribute="height" multiplier="139:99" id="4H1-Mh-PVr"/>
+                                </constraints>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="CkQ-Qi-4U8" secondAttribute="trailing" id="56z-CQ-KTI"/>
+                            <constraint firstItem="CkQ-Qi-4U8" firstAttribute="leading" secondItem="w98-gX-sdG" secondAttribute="leading" id="K3a-Ef-rRT"/>
+                            <constraint firstItem="CkQ-Qi-4U8" firstAttribute="top" secondItem="w98-gX-sdG" secondAttribute="top" constant="63" id="veq-FD-eVb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9yq-kM-r8N"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="CkQ-Qi-4U8" id="7rn-br-hHl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DgV-9z-hfc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1227.536231884058" y="874.72826086956525"/>
         </scene>
         <!--Selector View Controller-->
         <scene sceneID="a6b-Sv-Yac">

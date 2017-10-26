@@ -21,6 +21,7 @@ class SelectorViewController: UIViewController,UIPickerViewDataSource,UIPickerVi
     
     var packsSmoked = 0.2
     var selectIndex = 0;
+    let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -77,6 +78,9 @@ class SelectorViewController: UIViewController,UIPickerViewDataSource,UIPickerVi
         
         var myDateInterval = DateInterval();
         let quitDate = quitDateSelector.date;
+        let dateSet = true
+        defaults.set(quitDate, forKey:"myDate")
+        defaults.set(dateSet, forKey:"dateSet")
         let currentDate = Date();
         if currentDate < quitDate {
             print("quit date is in future")
