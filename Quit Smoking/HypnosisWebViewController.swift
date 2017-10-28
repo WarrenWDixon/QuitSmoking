@@ -1,22 +1,23 @@
 //
-//  SueWardViewController.swift
+//  HypnosisWebViewController.swift
 //  Quit Smoking
 //
-//  Created by Warren Dixon on 10/25/17.
+//  Created by Warren Dixon on 10/27/17.
 //  Copyright © 2017 Warren Dixon. All rights reserved.
 //
 
 import UIKit
 import WebKit
 
-class SueWardViewController: UIViewController {
+class HypnosisWebViewController: UIViewController {
 
     @IBOutlet weak var webView: WKWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("in SueWardViewController")
-        webView.loadHTMLString("<iframe width=\"\(webView.frame.width)\" height=\"\(webView.frame.height)\" src=\"https://www.youtube.com/embed/9k8XnBWXgj4?rel=0\" frameborder=\"0\" allowfullscreen></iframe>", baseURL: nil)
-        // Do any additional setup after loading the view, typically from 
+        let myURL = URL(string: "http://www.dallashypnosiscenter.com")
+        let myRequest = URLRequest(url: myURL!)
+        webView.load(myRequest)
         // Do any additional setup after loading the view.
     }
 

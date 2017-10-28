@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0oc-Je-9o9">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -26,23 +26,23 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rayLines5.png" translatesAutoresizingMaskIntoConstraints="NO" id="7xH-c7-X1J">
-                                <rect key="frame" x="0.0" y="64" width="750" height="672"/>
+                                <rect key="frame" x="0.0" y="64" width="750" height="603"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="Zn5-Jj-Ai1">
-                                <rect key="frame" x="18" y="269" width="381" height="198"/>
+                                <rect key="frame" x="18" y="234.5" width="382" height="198"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUIT SMOKING NOW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAD-bx-OQ6">
-                                        <rect key="frame" x="34.333333333333343" y="0.0" width="312.33333333333326" height="44"/>
+                                        <rect key="frame" x="35" y="0.0" width="312" height="44"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="34"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3c2-cq-Lpx">
-                                        <rect key="frame" x="0.33333333333334281" y="77" width="380.33333333333326" height="44"/>
+                                        <rect key="frame" x="0.5" y="77" width="381" height="44"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="7yI-34-685"/>
@@ -80,7 +80,7 @@
                                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     </toolbar>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" minimumValueImage="audio-low-white" maximumValueImage="audio-mid-white" translatesAutoresizingMaskIntoConstraints="NO" id="dlI-w0-lmD">
-                                        <rect key="frame" x="-2" y="154" width="385" height="45"/>
+                                        <rect key="frame" x="-1.5" y="154" width="385" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="381" id="VP4-gw-1Ey"/>
                                         </constraints>
@@ -95,7 +95,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aon-V0-RaU">
-                                <rect key="frame" x="713" y="113" width="21" height="22"/>
+                                <rect key="frame" x="718" y="113" width="16" height="22"/>
                                 <state key="normal" image="cog-16"/>
                                 <connections>
                                     <segue destination="DAg-lx-8vM" kind="show" id="ZuD-7v-2fJ"/>
@@ -132,12 +132,15 @@
             <objects>
                 <viewController id="uM4-pn-EFA" customClass="SueWardViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zAD-jz-VbI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wxj-8M-GoR">
-                                <rect key="frame" x="0.0" y="62" width="414" height="319"/>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wxj-8M-GoR">
+                                <rect key="frame" x="0.0" y="64" width="375" height="289"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wxj-8M-GoR" secondAttribute="height" multiplier="414:319" id="Ckp-pX-xVJ"/>
+                                </constraints>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
@@ -146,9 +149,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="SiN-zT-rc1" firstAttribute="trailing" secondItem="wxj-8M-GoR" secondAttribute="trailing" id="35K-1x-vcw"/>
-                            <constraint firstItem="wxj-8M-GoR" firstAttribute="leading" secondItem="SiN-zT-rc1" secondAttribute="leading" id="SEZ-L6-OUT"/>
-                            <constraint firstItem="wxj-8M-GoR" firstAttribute="top" secondItem="zAD-jz-VbI" secondAttribute="top" constant="62" id="rEB-LE-hz0"/>
+                            <constraint firstItem="wxj-8M-GoR" firstAttribute="trailing" secondItem="SiN-zT-rc1" secondAttribute="trailing" id="PUq-Ok-kaN"/>
+                            <constraint firstItem="wxj-8M-GoR" firstAttribute="leading" secondItem="SiN-zT-rc1" secondAttribute="leading" id="wOs-XW-WlF"/>
+                            <constraint firstItem="wxj-8M-GoR" firstAttribute="top" secondItem="SiN-zT-rc1" secondAttribute="top" id="yN2-JQ-SMd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SiN-zT-rc1"/>
                     </view>
@@ -165,11 +168,11 @@
             <objects>
                 <viewController id="HK8-JJ-crm" customClass="MikeLinletyViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ek4-Vx-UCA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Rq-HN-9uU">
-                                <rect key="frame" x="0.0" y="64" width="414" height="319.33333333333331"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="289.5"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="6Rq-HN-9uU" secondAttribute="height" multiplier="411:317" id="YFB-Fr-NqQ"/>
@@ -200,14 +203,15 @@
         <scene sceneID="rY4-71-7an">
             <objects>
                 <viewController id="VfX-rB-8yi" customClass="DaliaDanielViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="gaR-Tx-QVw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="gaR-Tx-QVw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j53-B0-4CC">
-                                <rect key="frame" x="-1" y="66" width="411" height="332"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="334.5"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="j53-B0-4CC" secondAttribute="height" multiplier="207:167" id="9sW-a0-JY7"/>
                                     <constraint firstAttribute="width" secondItem="j53-B0-4CC" secondAttribute="height" multiplier="411:332" id="Int-xl-7cR"/>
                                 </constraints>
                                 <wkWebViewConfiguration key="configuration">
@@ -217,6 +221,11 @@
                             </wkWebView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vpZ-M5-NUv" firstAttribute="trailing" secondItem="j53-B0-4CC" secondAttribute="trailing" id="MuR-EF-DN7"/>
+                            <constraint firstItem="j53-B0-4CC" firstAttribute="leading" secondItem="gaR-Tx-QVw" secondAttribute="leading" id="ZMu-9C-Cna"/>
+                            <constraint firstItem="j53-B0-4CC" firstAttribute="top" secondItem="vpZ-M5-NUv" secondAttribute="top" id="frZ-nA-T3S"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="vpZ-M5-NUv"/>
                     </view>
                     <connections>
@@ -232,11 +241,11 @@
             <objects>
                 <viewController id="Jxj-Qx-b1J" customClass="BellaViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cbH-9k-jF6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="38Y-jo-rM9">
-                                <rect key="frame" x="0.0" y="64" width="414" height="298"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="270"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="38Y-jo-rM9" secondAttribute="height" multiplier="207:149" id="DrQ-zn-oG4"/>
@@ -268,17 +277,17 @@
             <objects>
                 <viewController id="Fkf-Sb-hwB" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="844-DH-LaP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Robert Hudak Testimonials" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9K-cr-MLy">
-                                <rect key="frame" x="68" y="90" width="280" height="86.666666666666686"/>
+                                <rect key="frame" x="68" y="90" width="241" height="86.5"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="36"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="2MS-DF-Lbr">
-                                <rect key="frame" x="127" y="221" width="160" height="312"/>
+                                <rect key="frame" x="107.5" y="221" width="160" height="312"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFY-oF-qOS">
                                         <rect key="frame" x="7" y="0.0" width="146" height="47"/>
@@ -303,7 +312,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTW-Rp-mdU">
-                                        <rect key="frame" x="4.6666666666666572" y="132" width="151" height="47"/>
+                                        <rect key="frame" x="4.5" y="132" width="151" height="47"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="29"/>
                                         <state key="normal" title="Mike Linley">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -325,7 +334,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMj-hX-fYJ">
-                                        <rect key="frame" x="45.666666666666657" y="264" width="69" height="48"/>
+                                        <rect key="frame" x="45.5" y="264" width="69" height="48"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="30"/>
                                         <state key="normal" title="Bella">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -358,18 +367,28 @@
             <objects>
                 <viewController id="DAg-lx-8vM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zFF-ur-mhW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rayLines5.png" translatesAutoresizingMaskIntoConstraints="NO" id="Cce-vV-0aI">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2je-q4-Lvo">
-                                <rect key="frame" x="60" y="262" width="294" height="212"/>
+                                <rect key="frame" x="66.5" y="218.5" width="242" height="230"/>
                                 <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNF-8b-PZN">
+                                        <rect key="frame" x="85.5" y="0.0" width="71" height="46"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="28"/>
+                                        <state key="normal" title="LINKS">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="9In-R6-Qar" kind="show" id="CHO-dp-Dvu"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="rrP-eg-jYD">
-                                        <rect key="frame" x="79" y="0.0" width="136" height="53"/>
-                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="34"/>
+                                        <rect key="frame" x="65" y="46" width="112" height="46"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="28"/>
                                         <state key="normal" title="READ ME">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -378,15 +397,18 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2OA-ae-Tt9">
-                                        <rect key="frame" x="73.666666666666657" y="53" width="147" height="53"/>
-                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="34"/>
+                                        <rect key="frame" x="60.5" y="92" width="121" height="46"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="28"/>
                                         <state key="normal" title="REWARDS">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="SP3-b9-or2" kind="show" id="oLF-0T-iqS"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cey-Ss-M0c">
-                                        <rect key="frame" x="37.666666666666686" y="106" width="219" height="53"/>
-                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="34"/>
+                                        <rect key="frame" x="31" y="138" width="180" height="46"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="28"/>
                                         <state key="normal" title="TESTIMONIALS">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -395,8 +417,8 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L38-E1-JPZ">
-                                        <rect key="frame" x="0.0" y="159" width="294" height="53"/>
-                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="34"/>
+                                        <rect key="frame" x="0.0" y="184" width="242" height="46"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="28"/>
                                         <state key="normal" title="RECORD QUIT DATE">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -421,18 +443,244 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G5b-vH-fgg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1228" y="143"/>
+            <point key="canvasLocation" x="1226.25" y="142.5"/>
+        </scene>
+        <!--Youtube Web View Controller-->
+        <scene sceneID="VfU-Va-GSj">
+            <objects>
+                <viewController id="NpM-PV-vIR" customClass="YoutubeWebViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UjP-PM-VUe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ErP-Mx-gUb">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ErP-Mx-gUb" secondAttribute="trailing" id="M64-BD-9sj"/>
+                            <constraint firstItem="ErP-Mx-gUb" firstAttribute="leading" secondItem="ass-Dh-PoJ" secondAttribute="leading" id="N1V-Cy-3Ir"/>
+                            <constraint firstItem="ErP-Mx-gUb" firstAttribute="top" secondItem="ass-Dh-PoJ" secondAttribute="top" id="UGS-kp-8Pw"/>
+                            <constraint firstItem="ass-Dh-PoJ" firstAttribute="bottom" secondItem="ErP-Mx-gUb" secondAttribute="bottom" id="zcB-Qf-GmX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ass-Dh-PoJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="ErP-Mx-gUb" id="odn-X9-kYg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9s1-HJ-SPc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-506.39999999999998" y="-910.79460269865069"/>
+        </scene>
+        <!--Hypnosis Web View Controller-->
+        <scene sceneID="h8f-3u-7J0">
+            <objects>
+                <viewController id="E3Z-ee-ACu" customClass="HypnosisWebViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HBB-fQ-re7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qza-PR-QD8">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="qza-PR-QD8" secondAttribute="bottom" id="H6E-a4-Jme"/>
+                            <constraint firstItem="qza-PR-QD8" firstAttribute="leading" secondItem="32a-Yh-SDa" secondAttribute="leading" id="m73-xZ-A5M"/>
+                            <constraint firstItem="qza-PR-QD8" firstAttribute="top" secondItem="32a-Yh-SDa" secondAttribute="top" id="wo3-iI-PK9"/>
+                            <constraint firstAttribute="trailing" secondItem="qza-PR-QD8" secondAttribute="trailing" id="ySF-7y-LZD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="32a-Yh-SDa"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="qza-PR-QD8" id="FQg-bl-KTA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="czj-y5-RzO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="253.59999999999999" y="-1115.8920539730136"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8w0-OY-Sru">
+            <objects>
+                <viewController id="9In-R6-Qar" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PK3-y4-oIn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rayLines5.png" translatesAutoresizingMaskIntoConstraints="NO" id="mWj-fG-pog">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                            <stackView opaque="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="IYO-Q6-rY4">
+                                <rect key="frame" x="75" y="284" width="236" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBW-Dx-vJD">
+                                        <rect key="frame" x="0.0" y="0.0" width="236" height="36"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                        <state key="normal" title="DALLAS HYPNOSIS CENTER">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="E3Z-ee-ACu" kind="show" id="UpA-0H-SQY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0J-9g-jui">
+                                        <rect key="frame" x="0.0" y="70" width="236" height="36"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                        <state key="normal" title="YOUTUBE CHANNEL">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="NpM-PV-vIR" kind="show" id="eMA-4h-cQK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="mWj-fG-pog" secondAttribute="bottom" id="DsN-py-XhX"/>
+                            <constraint firstItem="mWj-fG-pog" firstAttribute="trailing" secondItem="xlc-jI-ISp" secondAttribute="trailing" id="Nkf-H4-V8h"/>
+                            <constraint firstItem="mWj-fG-pog" firstAttribute="top" secondItem="xlc-jI-ISp" secondAttribute="top" id="cw6-PT-Bh7"/>
+                            <constraint firstItem="mWj-fG-pog" firstAttribute="leading" secondItem="xlc-jI-ISp" secondAttribute="leading" id="hmW-sp-ho2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xlc-jI-ISp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c3g-bV-DKP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1186.4000000000001" y="-585.1574212893554"/>
+        </scene>
+        <!--Rewards View Controller-->
+        <scene sceneID="ug9-sS-lar">
+            <objects>
+                <viewController id="SP3-b9-or2" customClass="RewardsViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uvi-ic-O0u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="VwF-W6-7Pz">
+                                <rect key="frame" x="37.5" y="156" width="300" height="355"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YSK-vh-WdR">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="9Nq-tI-B4t"/>
+                                            <constraint firstAttribute="height" constant="40" id="wOi-93-wTx"/>
+                                            <constraint firstAttribute="width" constant="300" id="xhi-z4-E9M"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="zGi-Ef-EkM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x11-wi-Q5c">
+                                        <rect key="frame" x="0.0" y="45" width="300" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCw-IO-jtw">
+                                        <rect key="frame" x="0.0" y="90" width="300" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXa-cf-DAI">
+                                        <rect key="frame" x="0.0" y="135" width="300" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Isi-np-TOO">
+                                        <rect key="frame" x="0.0" y="180" width="300" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6Q-au-Oxk">
+                                        <rect key="frame" x="0.0" y="225" width="300" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jL-7W-885">
+                                        <rect key="frame" x="0.0" y="270" width="300" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Jb-YG-mpx">
+                                        <rect key="frame" x="0.0" y="315" width="300" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="x11-wi-Q5c" firstAttribute="height" secondItem="YSK-vh-WdR" secondAttribute="height" id="2I1-s3-5Fd"/>
+                                    <constraint firstItem="ZCw-IO-jtw" firstAttribute="height" secondItem="YSK-vh-WdR" secondAttribute="height" id="3So-r8-IWA"/>
+                                    <constraint firstItem="qXa-cf-DAI" firstAttribute="width" secondItem="YSK-vh-WdR" secondAttribute="width" id="7F9-bC-Sw0"/>
+                                    <constraint firstItem="Isi-np-TOO" firstAttribute="height" secondItem="YSK-vh-WdR" secondAttribute="height" id="93f-0M-w0e"/>
+                                    <constraint firstItem="5jL-7W-885" firstAttribute="height" secondItem="YSK-vh-WdR" secondAttribute="height" id="9Qd-AI-F98"/>
+                                    <constraint firstItem="5jL-7W-885" firstAttribute="width" secondItem="YSK-vh-WdR" secondAttribute="width" id="Bbn-64-NBR"/>
+                                    <constraint firstItem="x11-wi-Q5c" firstAttribute="width" secondItem="YSK-vh-WdR" secondAttribute="width" id="GXX-i6-t2f"/>
+                                    <constraint firstItem="q6Q-au-Oxk" firstAttribute="height" secondItem="YSK-vh-WdR" secondAttribute="height" id="WXr-Vm-tm9"/>
+                                    <constraint firstItem="ZCw-IO-jtw" firstAttribute="width" secondItem="YSK-vh-WdR" secondAttribute="width" id="c64-2f-BEJ"/>
+                                    <constraint firstItem="3Jb-YG-mpx" firstAttribute="width" secondItem="YSK-vh-WdR" secondAttribute="width" id="eEJ-2u-K0Y"/>
+                                    <constraint firstItem="Isi-np-TOO" firstAttribute="width" secondItem="YSK-vh-WdR" secondAttribute="width" id="hbE-Fz-bgI"/>
+                                    <constraint firstItem="3Jb-YG-mpx" firstAttribute="height" secondItem="YSK-vh-WdR" secondAttribute="height" id="k6A-dL-Jey"/>
+                                    <constraint firstItem="q6Q-au-Oxk" firstAttribute="width" secondItem="YSK-vh-WdR" secondAttribute="width" id="nT6-s2-KAn"/>
+                                    <constraint firstItem="qXa-cf-DAI" firstAttribute="height" secondItem="YSK-vh-WdR" secondAttribute="height" id="sbO-T7-hO0"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
+                        <constraints>
+                            <constraint firstItem="VwF-W6-7Pz" firstAttribute="centerY" secondItem="uvi-ic-O0u" secondAttribute="centerY" id="FFk-tQ-JHK"/>
+                            <constraint firstItem="VwF-W6-7Pz" firstAttribute="centerX" secondItem="uvi-ic-O0u" secondAttribute="centerX" id="mcS-eg-Ave"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4g6-MR-z7H"/>
+                    </view>
+                    <connections>
+                        <outlet property="label1" destination="YSK-vh-WdR" id="4VW-Eh-zMr"/>
+                        <outlet property="label2" destination="x11-wi-Q5c" id="kBX-na-5P6"/>
+                        <outlet property="label3" destination="ZCw-IO-jtw" id="UeC-fl-l7i"/>
+                        <outlet property="label4" destination="qXa-cf-DAI" id="AFz-Wa-S7F"/>
+                        <outlet property="label5" destination="Isi-np-TOO" id="oLi-a3-0vJ"/>
+                        <outlet property="label6" destination="q6Q-au-Oxk" id="Y1a-BE-e58"/>
+                        <outlet property="label7" destination="5jL-7W-885" id="Fxc-n1-Rji"/>
+                        <outlet property="label8" destination="3Jb-YG-mpx" id="dyD-9c-Gi7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5d8-lY-247" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1965.5999999999999" y="-647.22638680659679"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7sm-Yv-dZj">
             <objects>
                 <viewController id="1h0-c8-2Kh" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zw7-Fd-qF5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="24" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32Z-M2-ESH">
-                                <rect key="frame" x="19" y="67.999999999999972" width="280" height="453.66666666666663"/>
+                                <rect key="frame" x="19" y="68" width="280" height="454"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="450" id="aYR-0I-sZe"/>
                                     <constraint firstAttribute="width" constant="280" id="qnx-zq-Dbc"/>
@@ -466,11 +714,11 @@
             <objects>
                 <viewController id="wHe-UG-oYG" customClass="PaulBakerViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w98-gX-sdG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CkQ-Qi-4U8">
-                                <rect key="frame" x="0.0" y="63" width="414" height="295"/>
+                                <rect key="frame" x="0.0" y="63" width="375" height="267.5"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="CkQ-Qi-4U8" secondAttribute="height" multiplier="139:99" id="4H1-Mh-PVr"/>
@@ -502,11 +750,11 @@
             <objects>
                 <viewController id="gRI-3p-M0s" customClass="SelectorViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="goC-hh-8ro">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="wwA-cf-WdY">
-                                <rect key="frame" x="32" y="113" width="359" height="163"/>
+                                <rect key="frame" x="32" y="113" width="320" height="163"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="163" id="GM5-1I-Vru"/>
                                     <constraint firstAttribute="height" constant="163" id="aqb-F2-gTh"/>
@@ -519,11 +767,11 @@
                                 </connections>
                             </datePicker>
                             <pickerView contentMode="scaleToFill" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="IUv-pT-rSS">
-                                <rect key="frame" x="27" y="410" width="356" height="163"/>
+                                <rect key="frame" x="27" y="380" width="317" height="163"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OuJ-ei-svO">
-                                <rect key="frame" x="61" y="286" width="292" height="53"/>
+                                <rect key="frame" x="61" y="286" width="253" height="23"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.4823529411764706" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
                                 <state key="normal" title="SET QUIT DATE">
@@ -534,7 +782,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="748" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8M-w5-i6f">
-                                <rect key="frame" x="51" y="580" width="318" height="39"/>
+                                <rect key="frame" x="51" y="550" width="279" height="0.0"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.4823529411764706" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="28"/>
                                 <state key="normal" title="SET NUMBER PACKS">
@@ -583,7 +831,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0oc-Je-9o9" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LeA-CS-DEf">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -597,9 +845,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="audio-low-white" width="21" height="21"/>
-        <image name="audio-mid-white" width="21" height="21"/>
-        <image name="cog-16" width="21" height="21"/>
+        <image name="audio-low-white" width="16" height="16"/>
+        <image name="audio-mid-white" width="16" height="16"/>
+        <image name="cog-16" width="16" height="16"/>
         <image name="rayLines5.png" width="750" height="1290"/>
     </resources>
 </document>

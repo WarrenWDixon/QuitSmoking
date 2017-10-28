@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2BCB4681FA43BB80070FF5F /* HypnosisWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCB4671FA43BB80070FF5F /* HypnosisWebViewController.swift */; };
+		E2BCB46A1FA43E8A0070FF5F /* YoutubeWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCB4691FA43E8A0070FF5F /* YoutubeWebViewController.swift */; };
 		E2BFEE921FA010CC00313F81 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BFEE911FA010CC00313F81 /* GradientView.swift */; };
 		E2BFEE961FA0208400313F81 /* SelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BFEE951FA0208400313F81 /* SelectorViewController.swift */; };
 		E2BFEEB61FA1921500313F81 /* PaulBakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BFEEB51FA1921500313F81 /* PaulBakerViewController.swift */; };
@@ -14,6 +16,7 @@
 		E2BFEEBA1FA1938300313F81 /* MikeLinletyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BFEEB91FA1938300313F81 /* MikeLinletyViewController.swift */; };
 		E2BFEEBC1FA193D500313F81 /* DaliaDanielViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BFEEBB1FA193D500313F81 /* DaliaDanielViewController.swift */; };
 		E2BFEEBE1FA1945D00313F81 /* BellaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BFEEBD1FA1945C00313F81 /* BellaViewController.swift */; };
+		E2C0F6EE1FA2C0AF00FBAA7F /* RewardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C0F6ED1FA2C0AF00FBAA7F /* RewardsViewController.swift */; };
 		E2DCC02D1F931A1200952CA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DCC02C1F931A1200952CA4 /* AppDelegate.swift */; };
 		E2DCC02F1F931A1200952CA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DCC02E1F931A1200952CA4 /* ViewController.swift */; };
 		E2DCC0321F931A1200952CA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2DCC0301F931A1200952CA4 /* Main.storyboard */; };
@@ -26,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E2BCB4671FA43BB80070FF5F /* HypnosisWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypnosisWebViewController.swift; sourceTree = "<group>"; };
+		E2BCB4691FA43E8A0070FF5F /* YoutubeWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeWebViewController.swift; sourceTree = "<group>"; };
 		E2BFEE911FA010CC00313F81 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		E2BFEE951FA0208400313F81 /* SelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorViewController.swift; sourceTree = "<group>"; };
 		E2BFEEB51FA1921500313F81 /* PaulBakerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaulBakerViewController.swift; sourceTree = "<group>"; };
@@ -33,6 +38,7 @@
 		E2BFEEB91FA1938300313F81 /* MikeLinletyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MikeLinletyViewController.swift; sourceTree = "<group>"; };
 		E2BFEEBB1FA193D500313F81 /* DaliaDanielViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaliaDanielViewController.swift; sourceTree = "<group>"; };
 		E2BFEEBD1FA1945C00313F81 /* BellaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BellaViewController.swift; sourceTree = "<group>"; };
+		E2C0F6ED1FA2C0AF00FBAA7F /* RewardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsViewController.swift; sourceTree = "<group>"; };
 		E2DCC0291F931A1200952CA4 /* Quit Smoking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quit Smoking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2DCC02C1F931A1200952CA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2DCC02E1F931A1200952CA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +90,9 @@
 				E2DCC0DE1F944CFA00952CA4 /* Player.swift */,
 				E2DCC0421F931F6200952CA4 /* rayLines5.png */,
 				E2DCC0301F931A1200952CA4 /* Main.storyboard */,
+				E2BCB4691FA43E8A0070FF5F /* YoutubeWebViewController.swift */,
+				E2BCB4671FA43BB80070FF5F /* HypnosisWebViewController.swift */,
+				E2C0F6ED1FA2C0AF00FBAA7F /* RewardsViewController.swift */,
 				E2BFEEBD1FA1945C00313F81 /* BellaViewController.swift */,
 				E2BFEEBB1FA193D500313F81 /* DaliaDanielViewController.swift */,
 				E2BFEEB91FA1938300313F81 /* MikeLinletyViewController.swift */,
@@ -176,11 +185,14 @@
 				E2DCC02F1F931A1200952CA4 /* ViewController.swift in Sources */,
 				E2DCC0DF1F944CFA00952CA4 /* Player.swift in Sources */,
 				E2BFEEB61FA1921500313F81 /* PaulBakerViewController.swift in Sources */,
+				E2BCB4681FA43BB80070FF5F /* HypnosisWebViewController.swift in Sources */,
 				E2BFEE921FA010CC00313F81 /* GradientView.swift in Sources */,
 				E2DCC02D1F931A1200952CA4 /* AppDelegate.swift in Sources */,
+				E2BCB46A1FA43E8A0070FF5F /* YoutubeWebViewController.swift in Sources */,
 				E2BFEE961FA0208400313F81 /* SelectorViewController.swift in Sources */,
 				E2BFEEBC1FA193D500313F81 /* DaliaDanielViewController.swift in Sources */,
 				E2BFEEB81FA1931300313F81 /* SueWardViewController.swift in Sources */,
+				E2C0F6EE1FA2C0AF00FBAA7F /* RewardsViewController.swift in Sources */,
 				E2BFEEBE1FA1945D00313F81 /* BellaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
