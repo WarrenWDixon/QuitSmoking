@@ -90,7 +90,7 @@ class RewardsViewController: UIViewController {
         }
         else {
             label1.text = "Please set your quit date, thanks!"
-            label1.isHidden = true
+            label1.isHidden = false
         }
         //}
         // Do any additional setup after loading the view.
