@@ -63,8 +63,8 @@ class RewardsViewController: UIViewController {
             var myDateInterval = DateInterval();
             let currentDate = Date();
             if currentDate < quitDate as Date {
-                //label1.text = ("Your quit date is in the future, no rewards yet!")
-                label1.text = "height: \(view.layer.bounds.height)  width:\(view.layer.bounds.width) "
+                label1.text = ("Your quit date is in the future, no rewards yet!")
+                //label1.text = "height: \(view.layer.bounds.height)  width:\(view.layer.bounds.width) "
             }
             else {
                 myDateInterval.start = quitDate as Date;
@@ -77,14 +77,9 @@ class RewardsViewController: UIViewController {
                 if (numDays > 1)
                 {
                     let amountSaved = 6.0 * Double(numDays)
-                    //label1.text = "Congratulations you've saved at least $\(amountSaved)!"
-
-                    
+                    label1.text = "Congratulations you've saved at least $\(amountSaved)!"
                     label2.text = "After 20 minutes your blood pressure and pulse rate returned to normal!"
-
-                    
                     label3.text = "After 24 hours your chance of a heart attack decreased!"
-
                     
                     if (numDays > 2) {
                         label4.text = "After two days your nerve endings started to renew, and your smell and taste improved!"
@@ -107,8 +102,8 @@ class RewardsViewController: UIViewController {
             }
         }
         else {
-            //label1.text = "Please set your quit date, thanks!"
-            label1.text = "height: \(view.layer.bounds.height)  width:\(view.layer.bounds.width) "
+            label1.text = "Please set your quit date, thanks!"
+            //label1.text = "height: \(view.layer.bounds.height)  width:\(view.layer.bounds.width) "
         }
         //}
         // Do any additional setup after loading the view.
