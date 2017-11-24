@@ -22,19 +22,38 @@ class RewardsViewController: UIViewController {
     
     let defaults = UserDefaults.standard
     override func viewDidLoad() {
-        label1.isHidden = true
-        label2.isHidden = true
-        label3.isHidden = true
-        label4.isHidden = true
-        label5.isHidden = true
-        label6.isHidden = true
-        label7.isHidden = true
-        label8.isHidden = true
+        label2.text = " "
+        label3.text = " "
+        label4.text = " "
+        label5.text = " "
+        label6.text = " "
+        label7.text = " "
+        label8.text = " "
+        if (view.layer.bounds.width >= 768) {
+            label1.font = label1.font.withSize(24)
+            label2.font = label2.font.withSize(24)
+            label3.font = label3.font.withSize(24)
+            label4.font = label4.font.withSize(24)
+            label5.font = label5.font.withSize(24)
+            label6.font = label6.font.withSize(24)
+            label7.font = label7.font.withSize(24)
+            label8.font = label8.font.withSize(24)
+            label1.sizeThatFits(CGSize(width: 600.0, height: 100))
+            label2.sizeThatFits(CGSize(width: 600.0, height: 100))
+            label3.sizeThatFits(CGSize(width: 600.0, height: 100))
+            label4.sizeThatFits(CGSize(width: 600.0, height: 100))
+            label5.sizeThatFits(CGSize(width: 600.0, height: 100))
+            label6.sizeThatFits(CGSize(width: 600.0, height: 100))
+            label7.sizeThatFits(CGSize(width: 600.0, height: 100))
+            label8.sizeThatFits(CGSize(width: 600.0, height: 100))
+        }
         
         super.viewDidLoad()
         var state:Bool
         print ("read tapped")
         state = defaults.bool(forKey:"dateSet")
+        label1.isHidden = false
+        label1.text = "height: \(view.layer.bounds.height)  width:\(view.layer.bounds.width) "
         print("state is \(state)")
         if state {
             print("state is true")
@@ -44,8 +63,8 @@ class RewardsViewController: UIViewController {
             var myDateInterval = DateInterval();
             let currentDate = Date();
             if currentDate < quitDate as Date {
-                label1.text = ("Your quit date is in the future, no rewards yet!")
-                label1.isHidden = false
+                //label1.text = ("Your quit date is in the future, no rewards yet!")
+                label1.text = "height: \(view.layer.bounds.height)  width:\(view.layer.bounds.width) "
             }
             else {
                 myDateInterval.start = quitDate as Date;
@@ -58,30 +77,29 @@ class RewardsViewController: UIViewController {
                 if (numDays > 1)
                 {
                     let amountSaved = 6.0 * Double(numDays)
-                    label1.text = "Congratulations you've saved at least $\(amountSaved)!"
-                    label1.isHidden = false;
+                    //label1.text = "Congratulations you've saved at least $\(amountSaved)!"
+
                     
                     label2.text = "After 20 minutes your blood pressure and pulse rate returned to normal!"
-                    label2.isHidden = false
+
                     
                     label3.text = "After 24 hours your chance of a heart attack decreased!"
-                    label3.isHidden = false
+
                     
                     if (numDays > 2) {
                         label4.text = "After two days your nerve endings started to renew, and your smell and taste improved!"
                         label4.isHidden = false;
-                        
                         if (numDays > 14) {
                             label5.text = "After two weeks your circulation and lung function improved!"
                             label5.isHidden = false;
                             if (numDays > 30) {
                                 label6.text = "After a month coughing, sinus congestion, fatigue, and shortness of breath decreased!"
-                                label6.isHidden = false;
+
                             }
                             
                             if (numDays > 365) {
                                 label7.text = "Congratulations after one year your risk of coronary heart disease is half of that of a smoker"
-                                label7.isHidden = false;
+ 
                             }
                         }
                     }
@@ -89,8 +107,8 @@ class RewardsViewController: UIViewController {
             }
         }
         else {
-            label1.text = "Please set your quit date, thanks!"
-            label1.isHidden = false
+            //label1.text = "Please set your quit date, thanks!"
+            label1.text = "height: \(view.layer.bounds.height)  width:\(view.layer.bounds.width) "
         }
         //}
         // Do any additional setup after loading the view.

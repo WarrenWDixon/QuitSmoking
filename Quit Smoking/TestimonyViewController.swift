@@ -1,29 +1,23 @@
 //
-//  HypnosisWebViewController.swift
+//  TestimonyViewController.swift
 //  Quit Smoking
 //
-//  Created by Warren Dixon on 10/27/17.
+//  Created by Warren Dixon on 10/29/17.
 //  Copyright © 2017 Warren Dixon. All rights reserved.
 //
 
 import UIKit
-import WebKit
 
-class HypnosisWebViewController: UIViewController,WKUIDelegate {
-    var webView: WKWebView!
-    
-    override func loadView() {
-        let webConfiguration = WKWebViewConfiguration()
-        webView = WKWebView(frame: .zero, configuration: webConfiguration)
-        webView.uiDelegate = self
-        view = webView
-    }
+class TestimonyViewController: UIViewController {
+
+    @IBOutlet weak var titleLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let myURL = URL(string: "http://www.dallashypnosiscenter.com")
-        let myRequest = URLRequest(url: myURL!)
-        webView.load(myRequest)
+        if view.layer.bounds.width == 320 {
+          titleLabel.font = titleLabel.font.withSize(28)
+        }
+
         // Do any additional setup after loading the view.
     }
 

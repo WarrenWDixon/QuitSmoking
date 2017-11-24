@@ -9,14 +9,19 @@
 import UIKit
 import WebKit
 
-class DaliaDanielViewController: UIViewController {
+class DaliaDanielViewController: UIViewController, UIWebViewDelegate {
 
-    @IBOutlet weak var webView: WKWebView!
+    var myWebView: WKWebView!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print("in DaliaDanielViewController")
-        webView.loadHTMLString("<iframe width=\"\(webView.frame.width)\" height=\"\(webView.frame.height)\" src=\"https://www.youtube.com/embed/9k8XnBWXgj4?rel=0\" frameborder=\"0\" allowfullscreen></iframe>", baseURL: nil)
+        let myWebView:UIWebView = UIWebView(frame: CGRect(x:0,y:0, width: UIScreen.main.bounds.width, height: (UIScreen.main.bounds.height)/2))
+        self.view.addSubview(myWebView)
+        myWebView.delegate = self
+        myWebView.loadHTMLString("<iframe width=\"\(myWebView.frame.width)\" height=\"\(myWebView.frame.height)\" src=\"https://www.youtube.com/embed/9k8XnBWXgj4?rel=0\" frameborder=\"0\" allowfullscreen></iframe>", baseURL: nil)
         // Do any additional setup after loading the view, typically from 
         // Do any additional setup after loading the view.
     }

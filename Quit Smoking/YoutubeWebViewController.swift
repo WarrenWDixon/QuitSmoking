@@ -9,9 +9,16 @@
 import UIKit
 import WebKit
 
-class YoutubeWebViewController: UIViewController {
+class YoutubeWebViewController: UIViewController, WKUIDelegate {
 
-    @IBOutlet weak var webView: WKWebView!
+    var webView: WKWebView!
+    
+    override func loadView() {
+        let webConfiguration = WKWebViewConfiguration()
+        webView = WKWebView(frame: .zero, configuration: webConfiguration)
+        webView.uiDelegate = self
+        view = webView
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

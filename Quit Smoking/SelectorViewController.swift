@@ -31,10 +31,21 @@ class SelectorViewController: UIViewController,UIPickerViewDataSource,UIPickerVi
         quitButton.layer.borderWidth = 2.0
         quitButton.layer.borderColor = UIColor.black.cgColor
         quitButton.layer.cornerRadius = 5.0
+        if (view.layer.bounds.width == 320) {
+            print("doing SE logic")
+            quitButton.titleLabel!.font = quitButton.titleLabel!.font.withSize(20)
+            quitDateSelector.sizeThatFits(CGSize(width : 280, height:100))
+            packSelector.sizeThatFits(CGSize(width : 280, height:100))
+            
+        }
         
         packsButton.layer.borderWidth = 2.0
         packsButton.layer.borderColor = UIColor.black.cgColor
         packsButton.layer.cornerRadius = 5.0
+        
+        if (view.layer.bounds.width == 320) {
+            packsButton.titleLabel!.font = packsButton.titleLabel!.font.withSize(20)
+        }
         
 
         // Do any additional setup after loading the view.
