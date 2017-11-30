@@ -14,9 +14,25 @@ class ViewController: UIViewController {
     @IBOutlet weak var pauseButton: UIBarButtonItem!
     @IBOutlet weak var playButton: UIBarButtonItem!
     
+    @IBOutlet weak var settingsBtn: UIButton!
     let myPlayer = Player()
     
     override func viewDidLoad() {
+        let width = self.view.frame.size.width
+        print("width is \(width) ")
+        if (width > 700) {
+            
+            let myImage: UIImage?
+            if (width > 1000) {
+                myImage = UIImage(named: "cog-64.png")
+            }
+            else {
+                myImage = UIImage(named: "cog-32.png")
+            }
+            if let img = myImage {
+              settingsBtn.setImage(img, for: .normal)
+            }
+        }
         super.viewDidLoad()
         myPlayer.initHypnosis()
         pauseButton.isEnabled = false
@@ -47,5 +63,19 @@ class ViewController: UIViewController {
         pauseButton.isEnabled = false
         playButton.isEnabled = true
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+       super.viewWillAppear(animated)
+     
+       // Hide the navigation bar on the this view controller
+       self.navigationController?.setNavigationBarHidden(true, animated: animated)
+     }
+     
+     override func viewWillDisappear(_ animated: Bool) {
+       super.viewWillDisappear(animated)
+     
+       // Show the navigation bar on other view controllers
+       self.navigationController?.setNavigationBarHidden(false, animated: animated)
+     }
 }
 
