@@ -684,67 +684,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="wwA-cf-WdY">
-                                <rect key="frame" x="0.0" y="84" width="768" height="140"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="140" id="GKP-oF-gXq"/>
-                                </constraints>
-                                <date key="date" timeIntervalSinceReferenceDate="530586504.00469398">
-                                    <!--2017-10-25 01:08:24 +0000-->
-                                </date>
-                                <connections>
-                                    <action selector="dateSelected:" destination="gRI-3p-M0s" eventType="valueChanged" id="MMq-p2-xjI"/>
-                                </connections>
-                            </datePicker>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OuJ-ei-svO">
-                                <rect key="frame" x="20" y="244" width="728" height="39"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="EGb-0X-b09"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
-                                <state key="normal" title="SET QUIT DATE">
-                                    <color key="titleColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
-                                </state>
-                                <connections>
-                                    <action selector="dateTapped:" destination="gRI-3p-M0s" eventType="touchUpInside" id="BIv-Qh-PXi"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="748" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8M-w5-i6f">
-                                <rect key="frame" x="21" y="493" width="727" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="E9j-2c-kKR"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="jzL-sp-LK0"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
-                                <state key="normal" title="SET NUMBER PACKS">
-                                    <color key="titleColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
-                                </state>
-                                <connections>
-                                    <action selector="packsTapped:" destination="gRI-3p-M0s" eventType="touchUpInside" id="0l5-Rv-WgH"/>
-                                </connections>
-                            </button>
-                            <pickerView contentMode="scaleToFill" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="IUv-pT-rSS">
-                                <rect key="frame" x="0.0" y="333" width="768" height="140"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="140" id="9aU-0H-gZ8"/>
-                                </constraints>
-                            </pickerView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="K03-4D-eYz">
+                                <rect key="frame" x="224" y="260.5" width="320" height="503"/>
+                                <subviews>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="wwA-cf-WdY">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="140" id="GKP-oF-gXq"/>
+                                        </constraints>
+                                        <date key="date" timeIntervalSinceReferenceDate="530586504.00469398">
+                                            <!--2017-10-25 01:08:24 +0000-->
+                                        </date>
+                                        <connections>
+                                            <action selector="dateSelected:" destination="gRI-3p-M0s" eventType="valueChanged" id="MMq-p2-xjI"/>
+                                        </connections>
+                                    </datePicker>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OuJ-ei-svO">
+                                        <rect key="frame" x="70" y="188" width="180" height="39"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="180" id="Apl-ip-xoM"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="EGb-0X-b09"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="SET QUIT DATE">
+                                            <color key="titleColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="dateTapped:" destination="gRI-3p-M0s" eventType="touchUpInside" id="BIv-Qh-PXi"/>
+                                        </connections>
+                                    </button>
+                                    <pickerView contentMode="scaleToFill" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="IUv-pT-rSS">
+                                        <rect key="frame" x="0.0" y="275" width="320" height="140"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="140" id="9aU-0H-gZ8"/>
+                                        </constraints>
+                                    </pickerView>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="748" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8M-w5-i6f">
+                                        <rect key="frame" x="35" y="463" width="250" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="2tP-VM-Djk"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="E9j-2c-kKR"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="jzL-sp-LK0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                        <state key="normal" title="SET NUMBER PACKS">
+                                            <color key="titleColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="packsTapped:" destination="gRI-3p-M0s" eventType="touchUpInside" id="0l5-Rv-WgH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="A3m-cg-Zr3" firstAttribute="trailing" secondItem="wwA-cf-WdY" secondAttribute="trailing" id="7OX-5K-aKs"/>
-                            <constraint firstItem="IUv-pT-rSS" firstAttribute="leading" secondItem="goC-hh-8ro" secondAttribute="leading" id="Dl4-Te-oMx"/>
-                            <constraint firstItem="IUv-pT-rSS" firstAttribute="top" secondItem="OuJ-ei-svO" secondAttribute="bottom" constant="50" id="MOU-mN-HEp"/>
-                            <constraint firstItem="A3m-cg-Zr3" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="t8M-w5-i6f" secondAttribute="bottom" constant="35" id="S1f-zt-oZX"/>
-                            <constraint firstItem="wwA-cf-WdY" firstAttribute="leading" secondItem="goC-hh-8ro" secondAttribute="leading" id="SPf-uM-zpu"/>
-                            <constraint firstItem="OuJ-ei-svO" firstAttribute="leading" secondItem="A3m-cg-Zr3" secondAttribute="leading" constant="20" id="TxC-Dc-2d8"/>
-                            <constraint firstItem="OuJ-ei-svO" firstAttribute="top" secondItem="wwA-cf-WdY" secondAttribute="bottom" constant="20" id="XTY-4H-JLx"/>
-                            <constraint firstItem="A3m-cg-Zr3" firstAttribute="trailing" secondItem="t8M-w5-i6f" secondAttribute="trailing" constant="20" id="bM0-EM-cf9"/>
-                            <constraint firstItem="A3m-cg-Zr3" firstAttribute="trailing" secondItem="IUv-pT-rSS" secondAttribute="trailing" id="cWO-B6-IS6"/>
-                            <constraint firstAttribute="trailing" secondItem="OuJ-ei-svO" secondAttribute="trailing" constant="20" id="dtR-PE-Kyp"/>
-                            <constraint firstItem="t8M-w5-i6f" firstAttribute="top" secondItem="IUv-pT-rSS" secondAttribute="bottom" constant="20" id="mwG-jK-BPT"/>
-                            <constraint firstItem="t8M-w5-i6f" firstAttribute="leading" secondItem="A3m-cg-Zr3" secondAttribute="leading" constant="21" id="n9G-5u-dl1"/>
-                            <constraint firstItem="wwA-cf-WdY" firstAttribute="top" secondItem="A3m-cg-Zr3" secondAttribute="top" constant="20" id="t0d-tV-iyp"/>
+                            <constraint firstItem="K03-4D-eYz" firstAttribute="centerY" secondItem="goC-hh-8ro" secondAttribute="centerY" id="QxH-KF-gwF"/>
+                            <constraint firstItem="K03-4D-eYz" firstAttribute="centerX" secondItem="goC-hh-8ro" secondAttribute="centerX" id="xJX-lG-bIY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="A3m-cg-Zr3"/>
                     </view>
@@ -757,7 +753,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hyv-NP-1Rc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1965.217391304348" y="848.64130434782612"/>
+            <point key="canvasLocation" x="1964.84375" y="848.4375"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FCc-S0-MOO">
