@@ -9,30 +9,45 @@
 import Foundation
 import AVFoundation
 
-class Player {
+class Player: NSObject, AVAudioPlayerDelegate {
     var path: String
     var url:URL
     var volume:Float
     var playbackSpeed:Float
     
     var hypnosisPlayer: AVAudioPlayer?
-    init() {
+    var myViewController: ViewController?
+    
+    override init() {
         path = Bundle.main.path(forResource: "Stop_Smoking_Now", ofType:"mp3")!
+        //path = Bundle.main.path(forResource: "sine2", ofType:"aiff")!
         url = URL(fileURLWithPath: path)
         volume = 0.5
         playbackSpeed = 1.0
+        
+       
+        
         
         
     }
     
     func initHypnosis() {
         path = Bundle.main.path(forResource: "Stop_Smoking_Now", ofType:"mp3")!
+        //path = Bundle.main.path(forResource: "sine2", ofType:"aiff")!
         url = URL(fileURLWithPath: path)
         do {
             hypnosisPlayer = try AVAudioPlayer(contentsOf: url)
             hypnosisPlayer?.enableRate = true
             hypnosisPlayer?.rate = 1.0
-            print(" we initialized hypnosis player")
+            hypnosisPlayer?.delegate = self
+            let audioSession = AVAudioSession.sharedInstance()
+            do {
+                try audioSession.setCategory(AVAudioSessionCategoryPlayback)
+            }
+            catch {
+                
+            }
+            //print(" we initialized hypnosis player")
         } catch {
             print("initialize hypnosis player failed")
         }
@@ -41,13 +56,14 @@ class Player {
     
    
     func playMP3(){
-        print("in play mp3")
+        //print("in play mp3")
         hypnosisPlayer?.rate = 1.0
         hypnosisPlayer?.play()
+       
     }
     
     func pauseMP3() {
-        print("in pause mp3")
+        //print("in pause mp3")
         hypnosisPlayer?.pause()
     }
     
@@ -69,6 +85,12 @@ class Player {
         hypnosisPlayer?.pause()
         hypnosisPlayer?.play()
         
+    }
+    
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        //print("The song ended")
+        hypnosisPlayer?.currentTime = 0
+        myViewController?.myTest()
     }
 }
 

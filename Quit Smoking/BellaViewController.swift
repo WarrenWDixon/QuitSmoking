@@ -15,7 +15,7 @@ class BellaViewController: UIViewController,UIWebViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("in BellaViewController")
+        //print("in BellaViewController")
         let myWebView:UIWebView = UIWebView(frame: CGRect(x:0,y:0, width: UIScreen.main.bounds.width, height: (UIScreen.main.bounds.height)/2))
         self.view.addSubview(myWebView)
         myWebView.delegate = self

@@ -32,7 +32,7 @@ class SelectorViewController: UIViewController,UIPickerViewDataSource,UIPickerVi
         quitButton.layer.borderColor = UIColor.black.cgColor
         quitButton.layer.cornerRadius = 5.0
         if (view.layer.bounds.width == 320) {
-            print("doing SE logic")
+            //print("doing SE logic")
             quitButton.titleLabel!.font = quitButton.titleLabel!.font.withSize(20)
             quitDateSelector.sizeThatFits(CGSize(width : 280, height:100))
             packSelector.sizeThatFits(CGSize(width : 280, height:100))
@@ -65,7 +65,7 @@ class SelectorViewController: UIViewController,UIPickerViewDataSource,UIPickerVi
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        print("in titleForRow title is \(packsArray[row]) ")
+        //print("in titleForRow title is \(packsArray[row]) ")
         return packsArray[row]
     }
     
@@ -77,7 +77,7 @@ class SelectorViewController: UIViewController,UIPickerViewDataSource,UIPickerVi
         else {
             packsSmoked = 0.5 * Double(row);
         }
-        print("packs smoked is \(packsSmoked) ");
+        //print("packs smoked is \(packsSmoked) ");
     }
 
     @IBAction func dateSelected(_ sender: Any) {
@@ -94,19 +94,22 @@ class SelectorViewController: UIViewController,UIPickerViewDataSource,UIPickerVi
         defaults.set(dateSet, forKey:"dateSet")
         let currentDate = Date();
         if currentDate < quitDate {
-            print("quit date is in future")
+            //print("quit date is in future")
         }
         else {
             myDateInterval.start = quitDate;
             myDateInterval.end   = currentDate;
-            print("date interval is \(myDateInterval.duration) ")
+            //print("date interval is \(myDateInterval.duration) ")
         }
         
         
     }
     
     @IBAction func packsTapped(_ sender: Any) {
-        print ("btn tapped the number of packs is \(packsSmoked) ")
+        //print ("btn tapped the number of packs is \(packsSmoked) ")
     }
+   
     
 }
+
+

@@ -23,7 +23,7 @@ class YoutubeWebViewController: UIViewController, WKUIDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let myURL = URL(string: "https://www.youtube.com/channel/UCBZ_OHKrQEVGSYVS_WS2fXA")
+        let myURL = URL(string: "https://www.youtube.com/channel/UCNYKWVfWRcHZKDNDPvLpNxw")
         let myRequest = URLRequest(url: myURL!)
         webView.load(myRequest)
         // Do any additional setup after loading the view.

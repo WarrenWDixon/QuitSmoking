@@ -1,23 +1,25 @@
 //
-//  TestimonyViewController.swift
+//  SettingsViewController.swift
 //  Quit Smoking
 //
-//  Created by Warren Dixon on 10/29/17.
-//  Copyright © 2017 Warren Dixon. All rights reserved.
+//  Created by Warren Dixon on 1/1/18.
+//  Copyright © 2018 Warren Dixon. All rights reserved.
 //
 
 import UIKit
 
-class TestimonyViewController: UIViewController {
+class SettingsViewController: UIViewController {
 
-    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var myStackView: UIStackView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if view.layer.bounds.width <= 350 {
-          titleLabel.text = "VIDEOS"
+        
+        //print ("width is \(width) ")
+        if self.view.frame.size.width < 350 {
+            //print ("changing stack veiw spacing")
+          myStackView.spacing = 0
         }
-
         // Do any additional setup after loading the view.
     }
 

@@ -10,7 +10,6 @@ import UIKit
 
 class RewardsViewController: UIViewController {
     
-   
     @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var label2: UILabel!
     @IBOutlet weak var label3: UILabel!
@@ -50,15 +49,15 @@ class RewardsViewController: UIViewController {
         
         super.viewDidLoad()
         var state:Bool
-        print ("read tapped")
+        //print ("read tapped")
         state = defaults.bool(forKey:"dateSet")
         label1.isHidden = false
         label1.text = "height: \(view.layer.bounds.height)  width:\(view.layer.bounds.width) "
-        print("state is \(state)")
+        //print("state is \(state)")
         if state {
-            print("state is true")
+            //print("state is true")
             let quitDate = defaults.object(forKey: "myDate") as? NSDate ?? NSDate()
-            print("quitDate is \(quitDate)" )
+            //print("quitDate is \(quitDate)" )
             
             var myDateInterval = DateInterval();
             let currentDate = Date();
@@ -69,11 +68,11 @@ class RewardsViewController: UIViewController {
             else {
                 myDateInterval.start = quitDate as Date;
                 myDateInterval.end   = currentDate;
-                print("date interval is \(myDateInterval.duration) ")
+                //print("date interval is \(myDateInterval.duration) ")
                 let numSeconds = Int(myDateInterval.duration)
                 let numDays = numSeconds / (60 * 60 * 24)
-                print("numSeconds is \(numSeconds)" )
-                print("numDays is \(numDays) ")
+                //print("numSeconds is \(numSeconds)" )
+                //print("numDays is \(numDays) ")
                 if (numDays > 1)
                 {
                     let amountSaved = 6.0 * Double(numDays)

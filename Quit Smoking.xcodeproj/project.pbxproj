@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E246C2D81FF86A7C000FF484 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E246C2D71FF86A7C000FF484 /* GradientView.swift */; };
 		E25278931FA6372500742CDD /* rayLines6.png in Resources */ = {isa = PBXBuildFile; fileRef = E25278921FA6372500742CDD /* rayLines6.png */; };
 		E25278B31FA695D100742CDD /* TestimonyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25278B21FA695D100742CDD /* TestimonyViewController.swift */; };
+		E26207E01FFB19FD00D77191 /* sine2.aiff in Resources */ = {isa = PBXBuildFile; fileRef = E26207DF1FFB19FC00D77191 /* sine2.aiff */; };
 		E2BCB4681FA43BB80070FF5F /* HypnosisWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCB4671FA43BB80070FF5F /* HypnosisWebViewController.swift */; };
 		E2BCB46A1FA43E8A0070FF5F /* YoutubeWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCB4691FA43E8A0070FF5F /* YoutubeWebViewController.swift */; };
-		E2BFEE921FA010CC00313F81 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BFEE911FA010CC00313F81 /* GradientView.swift */; };
 		E2BFEE961FA0208400313F81 /* SelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BFEE951FA0208400313F81 /* SelectorViewController.swift */; };
 		E2BFEEB61FA1921500313F81 /* PaulBakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BFEEB51FA1921500313F81 /* PaulBakerViewController.swift */; };
 		E2BFEEB81FA1931300313F81 /* SueWardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BFEEB71FA1931300313F81 /* SueWardViewController.swift */; };
@@ -19,6 +20,8 @@
 		E2BFEEBC1FA193D500313F81 /* DaliaDanielViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BFEEBB1FA193D500313F81 /* DaliaDanielViewController.swift */; };
 		E2BFEEBE1FA1945D00313F81 /* BellaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BFEEBD1FA1945C00313F81 /* BellaViewController.swift */; };
 		E2C0F6EE1FA2C0AF00FBAA7F /* RewardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C0F6ED1FA2C0AF00FBAA7F /* RewardsViewController.swift */; };
+		E2CFE8791FF9FE4500EAE86E /* MailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CFE8781FF9FE4500EAE86E /* MailViewController.swift */; };
+		E2CFE87B1FFA067100EAE86E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CFE87A1FFA067100EAE86E /* SettingsViewController.swift */; };
 		E2DCC02D1F931A1200952CA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DCC02C1F931A1200952CA4 /* AppDelegate.swift */; };
 		E2DCC02F1F931A1200952CA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DCC02E1F931A1200952CA4 /* ViewController.swift */; };
 		E2DCC0321F931A1200952CA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2DCC0301F931A1200952CA4 /* Main.storyboard */; };
@@ -31,11 +34,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E246C2D71FF86A7C000FF484 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		E25278921FA6372500742CDD /* rayLines6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rayLines6.png; sourceTree = "<group>"; };
 		E25278B21FA695D100742CDD /* TestimonyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestimonyViewController.swift; sourceTree = "<group>"; };
+		E26207DF1FFB19FC00D77191 /* sine2.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = sine2.aiff; sourceTree = "<group>"; };
 		E2BCB4671FA43BB80070FF5F /* HypnosisWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypnosisWebViewController.swift; sourceTree = "<group>"; };
 		E2BCB4691FA43E8A0070FF5F /* YoutubeWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeWebViewController.swift; sourceTree = "<group>"; };
-		E2BFEE911FA010CC00313F81 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		E2BFEE951FA0208400313F81 /* SelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorViewController.swift; sourceTree = "<group>"; };
 		E2BFEEB51FA1921500313F81 /* PaulBakerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaulBakerViewController.swift; sourceTree = "<group>"; };
 		E2BFEEB71FA1931300313F81 /* SueWardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SueWardViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +47,8 @@
 		E2BFEEBB1FA193D500313F81 /* DaliaDanielViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaliaDanielViewController.swift; sourceTree = "<group>"; };
 		E2BFEEBD1FA1945C00313F81 /* BellaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BellaViewController.swift; sourceTree = "<group>"; };
 		E2C0F6ED1FA2C0AF00FBAA7F /* RewardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsViewController.swift; sourceTree = "<group>"; };
+		E2CFE8781FF9FE4500EAE86E /* MailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailViewController.swift; sourceTree = "<group>"; };
+		E2CFE87A1FFA067100EAE86E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		E2DCC0291F931A1200952CA4 /* Quit Smoking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quit Smoking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2DCC02C1F931A1200952CA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2DCC02E1F931A1200952CA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,22 +95,25 @@
 				E2DCC02C1F931A1200952CA4 /* AppDelegate.swift */,
 				E2BFEE951FA0208400313F81 /* SelectorViewController.swift */,
 				E2DCC02E1F931A1200952CA4 /* ViewController.swift */,
+				E26207DF1FFB19FC00D77191 /* sine2.aiff */,
 				E2DCC0401F931AA100952CA4 /* rayLines3.png */,
 				E2DCC0DC1F944CE000952CA4 /* Stop_Smoking_Now.mp3 */,
 				E25278921FA6372500742CDD /* rayLines6.png */,
 				E2DCC0DE1F944CFA00952CA4 /* Player.swift */,
 				E2DCC0421F931F6200952CA4 /* rayLines5.png */,
 				E2DCC0301F931A1200952CA4 /* Main.storyboard */,
+				E2CFE87A1FFA067100EAE86E /* SettingsViewController.swift */,
 				E25278B21FA695D100742CDD /* TestimonyViewController.swift */,
 				E2BCB4691FA43E8A0070FF5F /* YoutubeWebViewController.swift */,
 				E2BCB4671FA43BB80070FF5F /* HypnosisWebViewController.swift */,
+				E2CFE8781FF9FE4500EAE86E /* MailViewController.swift */,
 				E2C0F6ED1FA2C0AF00FBAA7F /* RewardsViewController.swift */,
+				E246C2D71FF86A7C000FF484 /* GradientView.swift */,
 				E2BFEEBD1FA1945C00313F81 /* BellaViewController.swift */,
 				E2BFEEBB1FA193D500313F81 /* DaliaDanielViewController.swift */,
 				E2BFEEB91FA1938300313F81 /* MikeLinletyViewController.swift */,
 				E2BFEEB71FA1931300313F81 /* SueWardViewController.swift */,
 				E2BFEEB51FA1921500313F81 /* PaulBakerViewController.swift */,
-				E2BFEE911FA010CC00313F81 /* GradientView.swift */,
 				E2DCC0331F931A1200952CA4 /* Assets.xcassets */,
 				E2DCC0351F931A1200952CA4 /* LaunchScreen.storyboard */,
 				E2DCC0381F931A1200952CA4 /* Info.plist */,
@@ -145,6 +154,11 @@
 					E2DCC0281F931A1200952CA4 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -178,6 +192,7 @@
 				E2DCC0321F931A1200952CA4 /* Main.storyboard in Resources */,
 				E2DCC0DD1F944CE600952CA4 /* Stop_Smoking_Now.mp3 in Resources */,
 				E2DCC0431F931F6800952CA4 /* rayLines5.png in Resources */,
+				E26207E01FFB19FD00D77191 /* sine2.aiff in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,9 +207,10 @@
 				E2DCC02F1F931A1200952CA4 /* ViewController.swift in Sources */,
 				E2DCC0DF1F944CFA00952CA4 /* Player.swift in Sources */,
 				E2BFEEB61FA1921500313F81 /* PaulBakerViewController.swift in Sources */,
+				E246C2D81FF86A7C000FF484 /* GradientView.swift in Sources */,
 				E2BCB4681FA43BB80070FF5F /* HypnosisWebViewController.swift in Sources */,
-				E2BFEE921FA010CC00313F81 /* GradientView.swift in Sources */,
 				E2DCC02D1F931A1200952CA4 /* AppDelegate.swift in Sources */,
+				E2CFE87B1FFA067100EAE86E /* SettingsViewController.swift in Sources */,
 				E2BCB46A1FA43E8A0070FF5F /* YoutubeWebViewController.swift in Sources */,
 				E2BFEE961FA0208400313F81 /* SelectorViewController.swift in Sources */,
 				E2BFEEBC1FA193D500313F81 /* DaliaDanielViewController.swift in Sources */,
@@ -202,6 +218,7 @@
 				E25278B31FA695D100742CDD /* TestimonyViewController.swift in Sources */,
 				E2C0F6EE1FA2C0AF00FBAA7F /* RewardsViewController.swift in Sources */,
 				E2BFEEBE1FA1945D00313F81 /* BellaViewController.swift in Sources */,
+				E2CFE8791FF9FE4500EAE86E /* MailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,7 +360,7 @@
 				INFOPLIST_FILE = "Quit Smoking/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.winfielddixon.Quit-Smoking";
+				PRODUCT_BUNDLE_IDENTIFIER = com.winfielddixon.QuitSmoking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -359,7 +376,7 @@
 				INFOPLIST_FILE = "Quit Smoking/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.winfielddixon.Quit-Smoking";
+				PRODUCT_BUNDLE_IDENTIFIER = com.winfielddixon.QuitSmoking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
