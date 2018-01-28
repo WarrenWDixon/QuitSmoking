@@ -11,6 +11,7 @@
 		E25278931FA6372500742CDD /* rayLines6.png in Resources */ = {isa = PBXBuildFile; fileRef = E25278921FA6372500742CDD /* rayLines6.png */; };
 		E25278B31FA695D100742CDD /* TestimonyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25278B21FA695D100742CDD /* TestimonyViewController.swift */; };
 		E26207E01FFB19FD00D77191 /* sine2.aiff in Resources */ = {isa = PBXBuildFile; fileRef = E26207DF1FFB19FC00D77191 /* sine2.aiff */; };
+		E2859EE9201E5F3C0007D44A /* ReadMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2859EE8201E5F3C0007D44A /* ReadMeViewController.swift */; };
 		E2BCB4681FA43BB80070FF5F /* HypnosisWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCB4671FA43BB80070FF5F /* HypnosisWebViewController.swift */; };
 		E2BCB46A1FA43E8A0070FF5F /* YoutubeWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCB4691FA43E8A0070FF5F /* YoutubeWebViewController.swift */; };
 		E2BFEE961FA0208400313F81 /* SelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BFEE951FA0208400313F81 /* SelectorViewController.swift */; };
@@ -38,6 +39,7 @@
 		E25278921FA6372500742CDD /* rayLines6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rayLines6.png; sourceTree = "<group>"; };
 		E25278B21FA695D100742CDD /* TestimonyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestimonyViewController.swift; sourceTree = "<group>"; };
 		E26207DF1FFB19FC00D77191 /* sine2.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = sine2.aiff; sourceTree = "<group>"; };
+		E2859EE8201E5F3C0007D44A /* ReadMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadMeViewController.swift; sourceTree = "<group>"; };
 		E2BCB4671FA43BB80070FF5F /* HypnosisWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypnosisWebViewController.swift; sourceTree = "<group>"; };
 		E2BCB4691FA43E8A0070FF5F /* YoutubeWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeWebViewController.swift; sourceTree = "<group>"; };
 		E2BFEE951FA0208400313F81 /* SelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				E2DCC0DE1F944CFA00952CA4 /* Player.swift */,
 				E2DCC0421F931F6200952CA4 /* rayLines5.png */,
 				E2DCC0301F931A1200952CA4 /* Main.storyboard */,
+				E2859EE8201E5F3C0007D44A /* ReadMeViewController.swift */,
 				E2CFE87A1FFA067100EAE86E /* SettingsViewController.swift */,
 				E25278B21FA695D100742CDD /* TestimonyViewController.swift */,
 				E2BCB4691FA43E8A0070FF5F /* YoutubeWebViewController.swift */,
@@ -213,6 +216,7 @@
 				E2CFE87B1FFA067100EAE86E /* SettingsViewController.swift in Sources */,
 				E2BCB46A1FA43E8A0070FF5F /* YoutubeWebViewController.swift in Sources */,
 				E2BFEE961FA0208400313F81 /* SelectorViewController.swift in Sources */,
+				E2859EE9201E5F3C0007D44A /* ReadMeViewController.swift in Sources */,
 				E2BFEEBC1FA193D500313F81 /* DaliaDanielViewController.swift in Sources */,
 				E2BFEEB81FA1931300313F81 /* SueWardViewController.swift in Sources */,
 				E25278B31FA695D100742CDD /* TestimonyViewController.swift in Sources */,

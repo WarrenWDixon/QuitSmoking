@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0oc-Je-9o9">
-    <device id="ipad9_7" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -25,17 +25,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rayLines6.png" translatesAutoresizingMaskIntoConstraints="NO" id="7xH-c7-X1J">
-                                <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="Zn5-Jj-Ai1">
-                                <rect key="frame" x="18" y="389" width="732" height="246"/>
+                                <rect key="frame" x="18" y="141" width="284" height="198"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUIT SMOKING NOW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAD-bx-OQ6">
-                                        <rect key="frame" x="136.5" y="0.0" width="459" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="284" height="44"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="34"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -44,7 +44,7 @@
                                         </variation>
                                     </label>
                                     <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3c2-cq-Lpx">
-                                        <rect key="frame" x="0.5" y="93" width="731" height="60"/>
+                                        <rect key="frame" x="0.5" y="77" width="283" height="44"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="7yI-34-685"/>
@@ -82,7 +82,7 @@
                                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     </toolbar>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" minimumValueImage="audio-low-white" maximumValueImage="audio-mid-white" translatesAutoresizingMaskIntoConstraints="NO" id="dlI-w0-lmD">
-                                        <rect key="frame" x="214" y="186" width="304" height="61"/>
+                                        <rect key="frame" x="-2" y="154" width="288" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="300" id="VP4-gw-1Ey"/>
                                         </constraints>
@@ -97,7 +97,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aon-V0-RaU">
-                                <rect key="frame" x="736" y="113" width="16" height="22"/>
+                                <rect key="frame" x="288" y="113" width="16" height="22"/>
                                 <state key="normal" image="cog-16"/>
                                 <connections>
                                     <segue destination="DAg-lx-8vM" kind="show" id="ZuD-7v-2fJ"/>
@@ -137,7 +137,7 @@
             <objects>
                 <viewController id="uM4-pn-EFA" customClass="SueWardViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zAD-jz-VbI">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="SiN-zT-rc1"/>
@@ -152,7 +152,7 @@
             <objects>
                 <viewController id="HK8-JJ-crm" customClass="MikeLinletyViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ek4-Vx-UCA">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="eCn-r4-spx"/>
@@ -167,7 +167,7 @@
             <objects>
                 <viewController id="VfX-rB-8yi" customClass="DaliaDanielViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gaR-Tx-QVw">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="vpZ-M5-NUv"/>
@@ -182,11 +182,11 @@
             <objects>
                 <viewController id="Fkf-Sb-hwB" customClass="TestimonyViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="844-DH-LaP">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Robert Hudak Testimonials" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9K-cr-MLy">
-                                <rect key="frame" x="60" y="165" width="634" height="58"/>
+                                <rect key="frame" x="60" y="165" width="186" height="86.5"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="36"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -195,10 +195,10 @@
                                 </variation>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="2MS-DF-Lbr">
-                                <rect key="frame" x="234" y="267" width="283" height="317"/>
+                                <rect key="frame" x="58" y="295.5" width="187" height="245"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFY-oF-qOS">
-                                        <rect key="frame" x="31" y="0.0" width="221" height="65"/>
+                                        <rect key="frame" x="20.5" y="0.0" width="146" height="47"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="29"/>
                                         <state key="normal" title="Paul Baker">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -212,7 +212,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rR-be-PAF">
-                                        <rect key="frame" x="3" y="84" width="277" height="65"/>
+                                        <rect key="frame" x="2" y="66" width="183" height="47"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="29"/>
                                         <state key="normal" title="Sue Woodard">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -226,7 +226,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTW-Rp-mdU">
-                                        <rect key="frame" x="26.5" y="168" width="230" height="65"/>
+                                        <rect key="frame" x="18" y="132" width="151" height="47"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="29"/>
                                         <state key="normal" title="Mike Linley">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -240,7 +240,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VLY-fv-hRR">
-                                        <rect key="frame" x="0.0" y="252" width="283" height="65"/>
+                                        <rect key="frame" x="0.0" y="198" width="187" height="47"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="29"/>
                                         <state key="normal" title="Billie O'Daniel">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -279,17 +279,17 @@
             <objects>
                 <viewController id="DAg-lx-8vM" customClass="SettingsViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zFF-ur-mhW">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rayLines5.png" translatesAutoresizingMaskIntoConstraints="NO" id="Cce-vV-0aI">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="2je-q4-Lvo">
-                                <rect key="frame" x="165" y="259" width="438" height="492"/>
+                                <rect key="frame" x="28.5" y="53" width="263" height="360"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNF-8b-PZN">
-                                        <rect key="frame" x="156" y="0.0" width="126" height="72"/>
+                                        <rect key="frame" x="92" y="0.0" width="79" height="50"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="31"/>
                                         <state key="normal" title="LINKS">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -302,7 +302,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="rrP-eg-jYD">
-                                        <rect key="frame" x="119" y="84" width="200" height="72"/>
+                                        <rect key="frame" x="75.5" y="62" width="112" height="50"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="28"/>
                                         <state key="normal" title="READ ME">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -315,7 +315,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2OA-ae-Tt9">
-                                        <rect key="frame" x="111" y="168" width="216" height="72"/>
+                                        <rect key="frame" x="71" y="124" width="121" height="50"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="28"/>
                                         <state key="normal" title="REWARDS">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -328,7 +328,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cey-Ss-M0c">
-                                        <rect key="frame" x="58.5" y="252" width="321" height="72"/>
+                                        <rect key="frame" x="41.5" y="186" width="180" height="50"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="28"/>
                                         <state key="normal" title="TESTIMONIALS">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -341,7 +341,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L38-E1-JPZ">
-                                        <rect key="frame" x="3" y="336" width="432" height="72"/>
+                                        <rect key="frame" x="10.5" y="248" width="242" height="50"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="28"/>
                                         <state key="normal" title="RECORD QUIT DATE">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -354,7 +354,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZv-T6-oPw">
-                                        <rect key="frame" x="0.0" y="420" width="438" height="72"/>
+                                        <rect key="frame" x="0.0" y="310" width="263" height="50"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="30"/>
                                         <state key="normal" title="PROVIDE FEEDBACK">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -393,7 +393,7 @@
             <objects>
                 <viewController id="NpM-PV-vIR" customClass="YoutubeWebViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UjP-PM-VUe">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="ass-Dh-PoJ"/>
@@ -408,7 +408,7 @@
             <objects>
                 <viewController id="E3Z-ee-ACu" customClass="HypnosisWebViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HBB-fQ-re7">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="32a-Yh-SDa"/>
@@ -423,17 +423,17 @@
             <objects>
                 <viewController id="9In-R6-Qar" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PK3-y4-oIn">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rayLines6.png" translatesAutoresizingMaskIntoConstraints="NO" id="mWj-fG-pog">
-                                <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                             </imageView>
                             <stackView opaque="NO" tag="30" contentMode="scaleToFill" axis="vertical" spacing="61" translatesAutoresizingMaskIntoConstraints="NO" id="IYO-Q6-rY4">
-                                <rect key="frame" x="78" y="406.5" width="612" height="211"/>
+                                <rect key="frame" x="42" y="173.5" width="236" height="133"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBW-Dx-vJD">
-                                        <rect key="frame" x="0.0" y="0.0" width="612" height="75"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="236" height="36"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
                                         <state key="normal" title="DALLAS HYPNOSIS CENTER">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -446,7 +446,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0J-9g-jui">
-                                        <rect key="frame" x="0.0" y="136" width="612" height="75"/>
+                                        <rect key="frame" x="0.0" y="97" width="236" height="36"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
                                         <state key="normal" title="YOUTUBE CHANNEL">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -482,56 +482,56 @@
             <objects>
                 <viewController id="SP3-b9-or2" customClass="RewardsViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uvi-ic-O0u">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FKj-EI-Ukz">
-                                <rect key="frame" x="0.0" y="84" width="0.0" height="920"/>
+                                <rect key="frame" x="20" y="84" width="280" height="376"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gl3-QM-548">
-                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="106.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="38.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioR-PI-AqA">
-                                        <rect key="frame" x="0.0" y="116.5" width="0.0" height="106"/>
+                                        <rect key="frame" x="0.0" y="48.5" width="280" height="38"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5BZ-59-fAB">
-                                        <rect key="frame" x="0.0" y="232.5" width="0.0" height="106.5"/>
+                                        <rect key="frame" x="0.0" y="96.5" width="280" height="38.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hx-o2-UrY">
-                                        <rect key="frame" x="0.0" y="349" width="0.0" height="106"/>
+                                        <rect key="frame" x="0.0" y="145" width="280" height="38"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAR-pb-ouq">
-                                        <rect key="frame" x="0.0" y="465" width="0.0" height="106.5"/>
+                                        <rect key="frame" x="0.0" y="193" width="280" height="38.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJH-by-s7z">
-                                        <rect key="frame" x="0.0" y="581.5" width="0.0" height="106"/>
+                                        <rect key="frame" x="0.0" y="241.5" width="280" height="38"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WF8-cb-966">
-                                        <rect key="frame" x="0.0" y="697.5" width="0.0" height="106.5"/>
+                                        <rect key="frame" x="0.0" y="289.5" width="280" height="38.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzJ-ey-1gw">
-                                        <rect key="frame" x="0.0" y="814" width="0.0" height="106"/>
+                                        <rect key="frame" x="0.0" y="338" width="280" height="38"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -563,31 +563,27 @@
             </objects>
             <point key="canvasLocation" x="1964.84375" y="-647.4609375"/>
         </scene>
-        <!--View Controller-->
+        <!--Read Me View Controller-->
         <scene sceneID="7sm-Yv-dZj">
             <objects>
-                <viewController id="1h0-c8-2Kh" sceneMemberID="viewController">
+                <viewController id="1h0-c8-2Kh" customClass="ReadMeViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zw7-Fd-qF5">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="24" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32Z-M2-ESH">
-                                <rect key="frame" x="19" y="68" width="728" height="312"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="450" id="aYR-0I-sZe"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="qnx-zq-Dbc"/>
-                                </constraints>
+                                <rect key="frame" x="19" y="68" width="280" height="379"/>
                                 <string key="text">When listening to Hypnotic Solutions make sure you are free of outside distractions and you will not be disturbed.  This should be considered a passive experience.  So you do not have to concentrate, verbalize, or memorize the words.  Simply let your body feels what it wants to feel and let your mind drift off to wherever it wants to go. 
 
 Please listen to this app at least once a day for at least 21 days.  It is helpful to listen more than once per day.
 
  Be sure not to listen to the CD’s and MP3’s while in a moving vehicle, or at a time when your concentration is necessary for your safety and well being.  So when you get ready to listen take a long deep breath close your eyes, sit back, relax, and enjoy the experience.
 </string>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
-                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -600,6 +596,9 @@ Please listen to this app at least once a day for at least 21 days.  It is helpf
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0pD-Yc-JUL"/>
                     </view>
+                    <connections>
+                        <outlet property="myLabel" destination="32Z-M2-ESH" id="YlE-Td-GL3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oQg-Iq-N97" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -610,7 +609,7 @@ Please listen to this app at least once a day for at least 21 days.  It is helpf
             <objects>
                 <viewController id="wHe-UG-oYG" customClass="PaulBakerViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w98-gX-sdG">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="9yq-kM-r8N"/>
@@ -625,15 +624,15 @@ Please listen to this app at least once a day for at least 21 days.  It is helpf
             <objects>
                 <viewController id="gRI-3p-M0s" customClass="SelectorViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" opaque="NO" contentMode="scaleToFill" id="goC-hh-8ro">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3cd-p0-7yY" customClass="GradientView" customModule="Quit_Smoking" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="K03-4D-eYz">
-                                <rect key="frame" x="224" y="260.5" width="320" height="503"/>
+                                <rect key="frame" x="0.0" y="-11.5" width="320" height="503"/>
                                 <subviews>
                                     <datePicker tag="-1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="wwA-cf-WdY">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
@@ -714,7 +713,7 @@ Please listen to this app at least once a day for at least 21 days.  It is helpf
             <objects>
                 <viewController id="24I-OY-vwd" customClass="MailViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZUe-Sr-NPt">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="amH-0m-Ldz"/>
@@ -730,7 +729,7 @@ Please listen to this app at least once a day for at least 21 days.  It is helpf
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0oc-Je-9o9" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LeA-CS-DEf">
-                        <rect key="frame" x="0.0" y="20" width="768" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
